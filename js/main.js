@@ -86,14 +86,13 @@ $(document).ready(function () {
 
   //Слайдер
   var swiper = new Swiper('.swiper-container', {
-    cssMode: true,
-
     scrollbar: {
       el: '.swiper-scrollbar',
       hide: true,
     },
+    cssMode: true,
     mousewheel: true,
-    keyboard: false,
+    keyboard: f,
   });
 
   //валидация форм
