@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="css/swiper.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animate.min.css" media="all" />
+  <title>Защитные маски</title>
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <section class="main">
+    <div class="container">
+      <div class="main__first">
+        <div class="menu">
+          <span class="logo menu__logo"><img src="img/thepetsour.png" alt="" class="menu__logo-img">THEPETSOUR</span>
+          <nav class="nav menu__nav">
+            <ul>
+              <li>
+                <a href="#1" class="nav__item"><img src="img/home-solid.svg" alt="home"
+                    class="nav__item-img">Главная</a>
+              </li>
+              <li><a href="#2" class="nav__item"><img src="img/user-friends-solid.svg" alt="user"
+                    class="nav__item-img">О нас</a></li>
+              <li>
+                <a href="#3" class="nav__item"><img src="img/hammer-solid.svg" alt="work" class="nav__item-img">Наши
+                  работы</a>
+              </li>
+              <li><a href="#4" class="nav__item"><img src="img/comments-solid.svg" alt="rowes"
+                    class="nav__item-img">Отзывы</a></li>
+              <li><a href="#5" class="nav__item"><img src="img/map-marked-alt-solid.svg" alt="map"
+                    class="nav__item-img">Карата заказов</a>
+              </li>
+              <li>
+                <a href="#6" class="nav__item"><img src="img/address-card-solid.svg" alt="address"
+                    class="nav__item-img">Контакты</a>
+              </li>
+              <li><a href="#7" class="nav__item"><img src="img/cart-arrow-down-solid.svg" alt="pay"
+                    class="nav__item-img">Заказать</a></li>
+            </ul>
+          </nav>
+          <!-- /.menu nav__menu -->
+          <div class="social">
+            <a href="https://www.instagram.com/_thepetsour/" target="_blank"><img src="img/instagram.svg"
+                alt="Instagramm" class="social-img1" /></a>
+            <a href="mailto:example@example.com" target="_blank"><img src="img/envelope-solid.svg" alt="Messages"
+                class="social-img2" /></a>
+            <a href="https://vk.com/thepetsour" target="_blank"><img src="img/vk-brands.svg" alt="Vkontakte"
+                class="social-img" /></a>
+            <a href="https://www.livemaster.ru/thepetsour" target="_blank"><img src="img/sun-solid.svg"
+                alt="Livemasters" class="social-img" /></a>
+          </div>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" id="1"></div>
+            <div class="swiper-slide" id="2"></div>
+            <div class="swiper-slide" id="3">Slide 3</div>
+            <div class="swiper-slide" id="4">Slide 4</div>
+            <div class="swiper-slide" id="5">Slide 5</div>
+            <div class="swiper-slide" id="6">Slide 6</div>
+            <div class="swiper-slide toorder" id="7">
+              <div class="toorder__info">
+                Здесь Вы можете оставить свою заявку, указав свои данные и пожелание. После мы с вами свяжемся для
+                уточнения всех ньансов. Спасибо за Ваш выбор
+              </div>
+              <form action="sendToorder.php" method="POST" class="form toorder__form">
+                <div class="input-group toorder__input-group">
+                  <label for="toorder-user-name" class="label form__label toorder__label">ФИО</label>
+                  <input type="text" autocomplete="off" name="userName" class="input form__input toorder__input"
+                    id="toorder-user-name" placeholder="Иванов Иван Иванович" maxlength="30" />
+                </div>
+                <div class="input-group toorder__input-group">
+                  <label for="toorder-user-email" class="label form__label toorder__label">E-MAIL</label>
+                  <input type="email" autocomplete="off" name="userEmail" class="input form__input toorder__input"
+                    id="toorder-user-email" placeholder="ivanov@gmail.com" maxlength="30" />
+                </div>
+
+                <div class="input-group toorder__input-group">
+                  <label for="toorder-user-phone" class="label form__label toorder__label">ТЕЛЕФОН</label>
+                  <input type="tel" autocomplete="off" name="userPhone" class="input form__input toorder__input"
+                    id="toorder-user-phone" placeholder="+7 999 888-88-88" />
+                </div>
+
+                <div class="input-group toorder__input-group">
+                  <label for="toorder-user-message" class="label form__label toorder__label">СООБЩЕНИЕ</label>
+                  <input type="text" autocomplete="off" name="userMessage" class="input form__input toorder__input"
+                    id="toorder-user-message" placeholder="Введите Ваше сообщение" maxlength="50" />
+                </div>
+
+                <button onclick="ym('61766605', 'reachGoal', 'button'); return true;"
+                  class="btn btn--primary toorder__btn">
+                  Оставить заявку
+                </button>
+              </form>
+              <div class="toorder__social">
+                <span class="toorder__social-title">Мы в сети</span>
+                <div class="toorder__social-info">
+                  <a href="https://www.instagram.com/_thepetsour/" target="_blank"><img src="img/instagram.svg"
+                      alt="Instagramm" class="toorder-img" /> Инстаграм</a>
+                  <a href="https://vk.com/thepetsour" target="_blank"><img src="img/vk-brands.svg" alt="Vkontakte"
+                      class="toorder-img" />Вконтакте</a>
+                  <a href="https://www.livemaster.ru/thepetsour" target="_blank"><img src="img/sun-solid.svg"
+                      alt="Livemasters" class="toorder-img" />Ярмарка мастеров</a></div>
+
+              </div>
+            </div>
+          </div>
+          <!-- Add Scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="https://5e7c8b12452c471f8d34e456--reverent-yonath-cad9c2.netlify.com/js/jquery.validate.min.js"></script>
+  <script src="https://5e7c8b12452c471f8d34e456--reverent-yonath-cad9c2.netlify.com/js/jquery.mask.min.js"></script>
+  <script src="https://5e7c8b12452c471f8d34e456--reverent-yonath-cad9c2.netlify.com/js/wow.min.js"></script>
+</body>
+
+</html>

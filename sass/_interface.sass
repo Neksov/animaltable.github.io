@@ -1,0 +1,29 @@
+.btn
+  padding: 1rem 6rem
+  border: none
+  border-radius: 30px
+  font-size: 1rem
+  font-weight: 500
+  &:hover
+    cursor: pointer
+    background-color: $black
+  &--primary
+    background-color: $primary
+    color: $light
+    transition: box-shadow 0.3s
+  &--light
+    background-color: $light
+    color: $primary
+    transition: box-shadow 0.3s
+  &:hover
+    box-shadow: none
+  &:active, &:focus 
+    outline: none
+label
+  &.invalid
+    position: absolute
+    margin-top: 53px
+    color: $black
+input
+  &.invalid
+    border-bottom: 1px solid $primary    
