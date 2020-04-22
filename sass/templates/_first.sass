@@ -7,6 +7,13 @@
   &-img
     max-width: 300px
     max-height: 300px
+    border-radius: 50%
+    box-shadow: 0 0 50px rgba(1, 1, 1, 1)
+    z-index: 1
+    &:hover
+      z-index: 0
+      cursor: pointer
+      box-shadow: 0 0 50px #ff5a3c
   &__title
     font-size: 30px
     padding: 2rem 3rem
@@ -14,19 +21,25 @@
     background: rgba(#ff5a3c, 0.7)
     text-transform: uppercase
     max-width: 20rem
-    margin: auto
+    margin: auto    
+    box-shadow: 0 0 50px rgba(1, 1, 1, 1)
+    cursor: pointer
+    a
+      text-decoration: none
+      color: #000000
   &__text
     font-size: 30px
     padding: 2rem
-    line-height: 2.5rem
+    line-height: 3rem
     text-transform: uppercase
-
 
   &__info
     display: flex
     flex-direction: column
     max-width: 50rem
   &__btn    
-    font-size: 17px
+    font-size: 24px
     margin: auto
-    max-width: 20rem
+    max-width: 25rem
+   
+  

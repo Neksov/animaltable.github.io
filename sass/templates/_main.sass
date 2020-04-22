@@ -16,6 +16,11 @@
     max-width: 180px
     max-height: 180px
     margin-bottom: 1rem
+    border-radius: 50%
+    box-shadow: 0 0 50px rgba(1, 1, 1, 1)
+    &:hover
+      cursor: pointer
+      box-shadow: 0 0 50px #ff5a3c
 
 .logo
   display: flex
@@ -24,13 +29,17 @@
   margin-top: 10px
   font-size: 20px
   font-weight: 700
+  a
+    display: contents
+    text-decoration: none
+    color: black
 
 .nav
   position: relative
   margin-left: -2rem
   &__item
     position: relative
-    font-size: 20px
+    font-size: 1.5rem
     font-weight: 400
     &-img
       margin-right: 10px

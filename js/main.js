@@ -1,18 +1,10 @@
 $(document).ready(function () {
   let modal = $(".modal"); //помещаем модальное окно
-  let modal2 = $(".modalFoto"); //помещаем модальное окно
-
-
 
   modalBtn = $("[data-toggle = modal]"); //
-  modalBtnFoto = $("[data-toggle = modalFoto]"); //
-
 
   closeBtn = $(".modal__close"); //
-  closeBtnFoto = $(".modalFoto__close"); //
   closeBtnSend = $(".modalSend__close"); //
-
-
 
   modalBtn.on("click", function () {
     //присваееваем класс
@@ -35,34 +27,6 @@ $(document).ready(function () {
       modal.toggleClass("modal--visible");
     }
   });
-
-  //открытие модального окна Фото 
-  modalBtnFoto.on("click", function () {
-    //присваееваем класс
-    modal2.toggleClass("modalFoto--visible");
-  });
-
-  closeBtnFoto.on("click", function () {
-    //присваееваем класс
-    modal2.toggleClass("modalFoto--visible");
-  });
-  //закрытие по esc
-  $(document).keyup("click", function (event) {
-    if (event.which == "27") {
-      $(".modalFoto").removeClass("modalFoto--visible");
-    }
-  });
-  // закрытие по клику вне окна
-  $(document).click(function (e) {
-    if ($(e.target).is(".modalFoto")) {
-      modal2.toggleClass("modalFoto--visible");
-    }
-  });
-  ///закрытие модалтного окна Фото
-
-
-
-
 
   //открытие модального окна ПОДПИСКИ
   $(".modalSend-btn").on("click", function (event) {
@@ -203,7 +167,6 @@ $(document).ready(function () {
   $("[type=tel]").mask("+7(000)000-00-00", {
     placeholder: "Ваш номер телефона:"
   });
-
   new WOW().init();
 });
 
@@ -214,3 +177,5 @@ $(document).ready(function () {
     img.removeAttribute("data-src");
   };
 });
+
+//слайдер работ

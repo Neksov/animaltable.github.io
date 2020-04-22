@@ -1,0 +1,177 @@
+.work
+  display: block
+  padding: 1rem
+  overflow-y: scroll
+
+.tabs 
+  position: relative
+  padding: 50px
+  padding-bottom: 80px
+  width: 100%
+  height: 100%
+  padding-top: 0
+  input[name="tab-control"] 
+    display: none
+  ul 
+    list-style-type: none
+    padding-left: 0
+    display: flex
+    flex-direction: row
+    margin-bottom: 10px
+    justify-content: space-between
+    align-items: flex-end
+    flex-wrap: wrap
+    li 
+      box-sizing: border-box
+      padding: 0 10px
+      text-align: center
+      label 
+        transition: all 0.3s ease-in-out
+        color: #929daf
+        padding: 5px auto
+        overflow: hidden
+        text-overflow: ellipsis
+        display: block
+        cursor: pointer
+        transition: all 0.2s ease-in-out
+        white-space: nowrap
+        user-select: none
+        br 
+          display: none
+          display: initial
+        svg 
+          fill: #929daf
+          height: 1.2em
+          vertical-align: bottom
+          margin-right: 0.2em
+          transition: all 0.2s ease-in-out
+          height: 1.5em
+  .content 
+    margin-top: 20px
+    section 
+      display: none
+      animation-name: content
+      animation-direction: normal
+      animation-duration: 0.3s
+      animation-timing-function: ease-in-out
+      animation-iteration-count: 1
+      line-height: 1.4
+      flex-wrap: wrap
+      h2 
+        color: #000000
+        display: none
+        display: block
+        text-transform: uppercase
+
+        
+  input[name="tab-control"]:nth-of-type(1):checked 
+    & ~ ul 
+      & > li 
+        &:nth-child(1) 
+          & > label 
+            cursor: default
+            color: #000000
+            svg 
+              color: #000000
+    & ~ .content 
+      & > section 
+        &:nth-child(1) 
+          display: block
+  input[name="tab-control"]:nth-of-type(2):checked 
+    & ~ ul 
+      & > li 
+        &:nth-child(2) 
+          & > label 
+            cursor: default
+            color: #000000
+            svg 
+              color: #000000
+    & ~ .content 
+      & > section 
+        &:nth-child(2) 
+          display: block
+  input[name="tab-control"]:nth-of-type(3):checked 
+    & ~ ul 
+      & > li 
+        &:nth-child(3) 
+          & > label 
+            cursor: default
+            color: #000000
+            svg 
+              color: #000000
+    & ~ .content 
+      & > section 
+        &:nth-child(3) 
+          display: block
+  input[name="tab-control"]:nth-of-type(4):checked 
+    & ~ ul 
+      & > li 
+        &:nth-child(4) 
+          & > label 
+            cursor: default
+            color: #000000
+            svg 
+              color: #000000
+    & ~ .content 
+      & > section 
+        &:nth-child(4) 
+          display: block
+.tabs .content section h2,
+.tabs ul li label 
+  font-weight: bold
+  font-size: 18px
+  color: #000000
+
+.tabs label 
+  background: rgba(192, 192, 192, 0.4)
+  width: 7rem
+  height: 7rem
+  border-radius: 50%
+  padding-top: 13px
+  &:hover
+    box-shadow: 0 0 50px #ff5a3c
+
+
+@keyframes 
+	content 
+  from
+    opacity: 0
+    transform: translateY(5%)
+  to
+    opacity: 
+    transform: translateY(0%)
+.animal
+  width: 50px
+  height: 50px
+.cards
+  &__animal
+    display: flex
+    flex-wrap: wrap
+    align-items: flex-start
+    justify-content: space-between
+    margin: auto
+
+
+.card
+  &__animal
+    background: rgba(192, 192, 192, 0.4)
+    box-shadow: 0 0 20px rgba(1, 1, 1, 1)
+    border-radius: 7px
+    overflow: hidden
+    margin-bottom: 30px
+    max-width: 20rem
+    text-decoration: none
+    cursor: pointer
+    padding-bottom: 1rem
+    &-images  
+      max-width: 20rem
+      max-height: 20rem
+      object-fit: cover// если у новой картинки будет другой размер
+      margin-bottom: 1rem
+    &:hover
+      transform: rotateY(180deg)
+
+    &-btn
+      font-size: 20px
+      margin: auto
+

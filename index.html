@@ -7,10 +7,10 @@
   <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="css/swiper.min.css" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/animate.min.css" media="all" />
-  <title>Защитные маски</title>
+  <link rel="stylesheet" href="css/animate.css" media="all" />
   <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  <title>Подставки под миски</title>
 </head>
 
 <body>
@@ -18,12 +18,13 @@
     <div class="container">
       <div class="main__first">
         <div class="menu">
-          <span class="logo menu__logo"><img src="img/thepetsour.png" alt="" class="menu__logo-img">THEPETSOUR</span>
+          <span class="logo menu__logo wow fadeInLeft"><a href="index.html"> <img src="img/thepetsour.png" alt=""
+                class="menu__logo-img">THEPETSOUR</a></span>
           <nav class="nav menu__nav">
             <ul>
               <li>
                 <a href="#1" class="nav__item"><img src="img/home-solid.svg" alt="home"
-                    class="nav__item-img">Главная</a>
+                    class="nav__item-img ">Главная</a>
               </li>
               <li><a href="#2" class="nav__item"><img src="img/user-friends-solid.svg" alt="user"
                     class="nav__item-img">О нас</a></li>
@@ -63,20 +64,94 @@
               <img src="img/thepetsour.png" alt="thepetsour" class="first-img">
 
               <div class="first__info">
-                <div class="first__title">
-                  thepetsour
+                <div class="first__title wow bounce"><a href="index.html"> thepetsour</a>
                 </div>
-                <div class="first__text">
+                <div class="first__text wow fadeInLeft" data-wow-delay="0.4s">
                   МЫ ВСЕГДА МЕЧТАЛИ СОЗДАТЬ ЧТО-ТО ТАКОЕ, ЧТО ОБЛЕГЧИТ ЖИЗНЬ НАМ И СДЕЛаЕТ ЕЕ СЧАТСЛИВЕЙ ДЛЯ НАШИХ
                   ПИТОМЦЕВ
                 </div>
-                <button class="btn first__btn btn--primary wow bounce" data-toggle="modal">
+                <button class="btn first__btn btn--primary " data-toggle="modal">
                   Заказать звонок
                 </button>
               </div>
             </div>
             <div class="swiper-slide" id="2"></div>
-            <div class="swiper-slide" id="3">Slide 3</div>
+            <div class="swiper-slide work" id="3">
+              <div class="tabs">
+                <input type="radio" id="tab1" name="tab-control" checked />
+                <input type="radio" id="tab2" name="tab-control" />
+                <input type="radio" id="tab3" name="tab-control" />
+                <ul>
+                  <li title="Для кошек">
+                    <label for="tab1" role="button">
+                      <img src="img/cat-solid.svg" alt="Cat" class="animal">
+                      <br /><span>Для кошек</span></label>
+                  </li>
+                  <li title="Для собак">
+                    <label for="tab2" role="button">
+                      <img src="img/dog-solid.svg" alt="Dog" class="animal"><br /><span>Для собак</span></label>
+                  </li>
+                  <li title="Прочее">
+                    <label for="tab3" role="button">
+                      <img src="img/pencil-ruler-solid.svg" alt="Other" class="animal">
+                      <br /><span>Прочее</span></label>
+                  </li>
+
+                </ul>
+
+
+                <div class="content">
+                  <section>
+                    <h2>Для кошек</h2>
+                    <div class="cards__animal">
+                      <div class="card__animal">
+                        <img src="img/dog1.jpg" alt="Dog" class="card__animal-images">
+                        <button class="btn card__animal-btn btn--primary " data-toggle="modal">
+                          Заказать</button>
+                      </div>
+                      <div class="card__animal">
+                        <img src="img/dog1.jpg" alt="Dog" class="card__animal-images">
+                        <button class="btn card__animal-btn btn--primary " data-toggle="modal">
+                          Заказать</button>
+                      </div>
+                      <div class="card__animal">
+                        <img src="img/dog1.jpg" alt="Dog" class="card__animal-images">
+                        <button class="btn card__animal-btn btn--primary " data-toggle="modal">
+                          Заказать</button>
+                      </div>
+                      <div class="card__animal">
+                        <img src="img/dog1.jpg" alt="Dog" class="card__animal-images">
+                        <button class="btn card__animal-btn btn--primary " data-toggle="modal">
+                          Заказать</button>
+                      </div>
+                      <div class="card__animal">
+                        <img src="img/dog1.jpg" alt="Dog" class="card__animal-images">
+                        <button class="btn card__animal-btn btn--primary " data-toggle="modal">
+                          Заказать</button>
+                      </div>
+                      <div class="card__animal">
+                        <img src="img/dog1.jpg" alt="Dog" class="card__animal-images">
+                        <button class="btn card__animal-btn btn--primary " data-toggle="modal">
+                          Заказать</button>
+                      </div>
+                    </div>
+                  </section>
+                  <section>
+                    <h2>Для собак</h2>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quas
+                    adipisci a accusantium eius ut voluptatibus ad impedit nulla, ipsa
+                    qui. Quasi temporibus eos commodi aliquid impedit amet, similique
+                    nulla.
+                  </section>
+                  <section>
+                    <h2>Прочее</h2>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nemo
+                    ducimus eius, magnam error quisquam sunt voluptate labore, excepturi
+                    numquam! Alias libero optio sed harum debitis! Veniam, quia in eum.
+                  </section>
+                </div>
+              </div>
+            </div>
             <div class="swiper-slide review" id="4">
               <div class="review__title">
                 Отзывы наших клиентов
@@ -154,6 +229,12 @@
             </div>
             <div class="swiper-slide" id="5">Slide 5</div>
             <div class="swiper-slide contacts" id="6">
+              <h3 class="contacts__title">Контакты</h3>
+              <div class="map">
+                <script type="text/javascript" charset="utf-8" async
+                  src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afa47075deb37a9cb9fc5df237b87ade7717e60d3a4b7d949e1fcdf89b5ceca83&amp;lang=ru_RU&amp;scroll=false">
+                </script>
+              </div>
               <div class="contacts__text">
                 <strong>Адрес:</strong>
                 <span>193313, Россия, Санкт-Петербург, Невский район</span>
@@ -161,19 +242,13 @@
                 <span> 10:00-18:00</span>
                 <strong>Телефон:</strong>
                 <span><a href="tel:+79119833112"></a> 8(911)983-31-12</span>
-
-              </div>
-              <div class="map">
-                <script type="text/javascript" charset="utf-8" async
-                  src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afa47075deb37a9cb9fc5df237b87ade7717e60d3a4b7d949e1fcdf89b5ceca83&amp;lang=ru_RU&amp;scroll=false">
-                </script>
-
               </div>
             </div>
-            <div class="swiper-slide toorder" id="7">
-              <div class="toorder__info">
+            <div class="swiper-slide toorder" style="  padding: 2rem
+            " id="7">
+              <div class="toorder__info wow fadeInLeft" data-wow-delay="0.4s">
                 Здесь Вы можете оставить свою заявку, указав свои данные и пожелание. После мы с вами свяжемся для
-                уточнения всех ньансов. Спасибо за Ваш выбор
+                уточнения всех ньансов.
               </div>
               <form action="sendToorder.php" method="POST" class="form toorder__form">
                 <div class="input-group toorder__input-group">
@@ -223,14 +298,48 @@
     </div>
     </div>
   </section>
+  <!-- Модальне окно -->
+  <div class="modal">
+    <div class="modal__dialog">
+      <button class="modal__close"></button>
 
+      <form action="sendModal.php" method="POST" class="form modal__form">
+        <div class="input-group modal__input-group">
+          <input type="text" name="userName" class="input form__input modal__input" id="modal-user-name"
+            placeholder="Ваше имя " maxlength="15" />
+        </div>
+        <div class="input-group modal__input-group">
+          <input type="tel" name="userPhone" class="input form__input modal__input" id="modal-user-phone"
+            placeholder="Ваш номер телефона " />
+        </div>
+        <button class="btn btn--primary modal__btn">
+          Отправить
+        </button>
+        <!-- /.button button-rimary modal__button -->
+      </form>
+      <!-- /.form modal__form -->
+    </div>
+  </div>
+  <!-- Модальне окно благодарности -->
+  <div class="modalSend">
+    <div class="modalSend__dialog">
+      <div class="modalSend__content">
+        <h3 class="modalSend__header">
+          Спасибо за заявку.<br />Наш менеджер перезвонит Вам в течение 15
+          минут. <br />
+          А пока подпишитесь на нашу группу Вконтакте
+        </h3>
+        <a href="https://vk.com/glo_academy" target="_blank">GLOAcademy</a>
+      </div>
+    </div>
+  </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="https://5e7c8b12452c471f8d34e456--reverent-yonath-cad9c2.netlify.com/js/jquery.validate.min.js"></script>
   <script src="https://5e7c8b12452c471f8d34e456--reverent-yonath-cad9c2.netlify.com/js/jquery.mask.min.js"></script>
-  <script src="https://5e7c8b12452c471f8d34e456--reverent-yonath-cad9c2.netlify.com/js/wow.min.js"></script>
+  <script src="js/wow.min.js"></script>
 </body>
 
 </html>
