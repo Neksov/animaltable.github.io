@@ -1,15 +1,9 @@
 .work
   display: block
-  padding: 1rem
+  padding: 2rem
   overflow-y: scroll
-
 .tabs 
   position: relative
-  padding: 50px
-  padding-bottom: 80px
-  width: 100%
-  height: 100%
-  padding-top: 0
   input[name="tab-control"] 
     display: none
   ul 
@@ -62,6 +56,7 @@
         display: none
         display: block
         text-transform: uppercase
+        font-size: 30px
 
         
   input[name="tab-control"]:nth-of-type(1):checked 
@@ -119,7 +114,6 @@
 .tabs .content section h2,
 .tabs ul li label 
   font-weight: bold
-  font-size: 18px
   color: #000000
 
 .tabs label 
@@ -151,7 +145,6 @@
     justify-content: space-between
     margin: auto
 
-
 .card
   &__animal
     background: rgba(192, 192, 192, 0.4)
@@ -163,15 +156,55 @@
     text-decoration: none
     cursor: pointer
     padding-bottom: 1rem
+    
     &-images  
       max-width: 20rem
       max-height: 20rem
       object-fit: cover// если у новой картинки будет другой размер
       margin-bottom: 1rem
-    &:hover
-      transform: rotateY(180deg)
-
+     
     &-btn
-      font-size: 20px
-      margin: auto
+      font-size: 30px
+      padding: 1rem 4rem
+      a
+        display: flex
+        align-items: center
+        text-decoration: none
+        color: #000000
+        &:hover
+          color: #ff5a3c
+    &-pay
+      width: 30px
+      height: 30px
+      margin-right: 10px
+.card__backinfo
+  transform-style: preserve-3d
+  transition: all 2s ease-in-out
+  margin-bottom: 1rem
+.card__backinfo:hover 
+  transform: rotateY(180deg)
+.card__backinfo .card__backinfo-images
+  max-width: 20rem
+  max-height: 20rem
+  position: absolute
+  overflow: hidden
+  left: 0
+.card__backinfo .card__backinfo-back
+  background: rgba(192, 192, 192, 0.9)
+  color: #000000
+  font-family: "Josefin Sans"
+  font-size: 26px
+  font-weight: 300
+  padding-top: 10px
+  text-align: center
+  transform: rotateY(180deg)
+  width: 20rem
+  height: 15rem
+.card
+  &__backinfo
+    &-price
+      font-size: 30px
+      font-weight: 900
+      text-decoration: underline
+
 
