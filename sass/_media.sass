@@ -1,0 +1,435 @@
+@media  screen and (min-width : 1600px) and (max-width : 1750px)
+  .menu 
+    flex-basis: 23%
+  .toorder
+    &__social
+      margin-right: 5rem
+@media  screen and (min-width : 1439px) and (max-width : 1599px)
+  .menu 
+    flex-basis: 26%
+  .toorder
+    &__social
+      margin-right: 2rem
+      margin-top: 4.6rem
+    &__form
+      margin-top: 1rem
+  .tabs ul li 
+    padding: 10px 73px
+@media  screen and (min-width : 1360px) and (max-width : 1438px)
+  .menu
+    flex-basis: 26%
+  .toorder
+    &__social
+      margin-right: 2rem
+      margin-top: 4.4rem
+    &__form
+      margin-top: 1rem
+  .tabs ul li 
+    padding: 10px 64px
+  .nav a 
+    padding: 20px 10px
+  .contacts
+    &__images 
+      max-width: 30rem
+      min-height: 20rem
+  .toorder
+    &__info 
+      font-size: 35px
+@media  screen and (min-width : 1200px) and (max-width : 1359px)
+  .menu
+    flex-basis: 28%
+  .toorder
+    &__social
+      margin-right: 0.5rem
+      margin-top: 4rem
+    &__form
+      margin-top: 1rem
+  .tabs ul li 
+    padding: 10px 45px
+  .nav a 
+    padding: 20px 10px
+  .contacts
+    &__images 
+      max-width: 30rem
+      min-height: 20rem
+  .toorder
+    &__info 
+      font-size: 30px
+  .first
+    flex-wrap: wrap
+    &-img 
+      max-width: 250px
+      max-height: 250px
+    &__title
+      margin-top: 1rem
+  .toorder
+    &__social
+      &-info a 
+        margin-top: 2rem
+        font-size: 15px
+
+@media  screen and (min-width : 1024px) and (max-width : 1199px)
+  .menu
+    flex-basis: 25%
+    &__logo
+      &-img 
+        max-width: 130px
+        max-height: 130px
+  .toorder
+    &__social
+      margin-right: 0.5rem
+      margin-top: 4rem
+    &__form
+      margin-top: 1rem
+  .tabs ul li 
+    padding: 10px 28px
+  .nav a 
+    padding: 30px 10px
+  .nav__item
+    font-size: 1rem
+  .contacts
+    &__images 
+      max-width: 30rem
+      min-height: 20rem
+  .toorder
+    &__info 
+      font-size: 25px
+  .first
+    flex-wrap: wrap
+    &-img 
+      max-width: 250px
+      max-height: 250px
+    &__title
+      margin-top: 1rem
+  .toorder
+    &__social
+      display: none
+@media  screen and (min-width : 992px) and (max-width : 1023px)
+  .menu
+    flex-basis: 25%
+    &__logo
+      &-img 
+        max-width: 130px
+        max-height: 130px
+  .toorder
+    &__social
+      margin-right: 0.5rem
+      margin-top: 4rem
+    &__form
+      margin-top: 1rem
+  .tabs ul li 
+    padding: 10px 25px
+  .nav a 
+    padding: 30px 10px
+  .nav__item
+    font-size: 1rem
+  .contacts
+    &__images 
+      max-width: 30rem
+      min-height: 20rem
+  .toorder
+    &__info 
+      font-size: 25px
+  .first
+    flex-wrap: wrap
+    &-img 
+      max-width: 250px
+      max-height: 250px
+    &__title
+      margin-top: 1rem
+  .toorder
+    &__social
+      display: none
+  .social
+    &-img1 
+      width: 25px
+      height: 25px
+  .social
+    &-img2 
+      width: 28px
+      height: 28px
+  .social
+    &-img3 
+      width: 28px
+      height: 28px
+  .social
+    &-img 
+      width: 30px
+      height: 30px
+@media  screen and (min-width : 768px) and (max-width : 991px)
+  #menu
+    &__toggle 
+      opacity: 0
+      
+
+  #menu__toggle:checked ~ .menu__btn > span 
+    transform: rotate(45deg)
+  #menu__toggle:checked ~ .menu__btn > span::before 
+    top: 0
+    transform: rotate(0)
+  #menu__toggle:checked ~ .menu__btn > span::after 
+    top: 0
+    transform: rotate(90deg)
+  #menu__toggle:checked ~ .menu__nav 
+    visibility: visible
+    left: 0
+    
+  .menu__btn 
+    display: flex
+    align-items: center
+    position: absolute
+    right: 130px
+    width: 26px
+    height: 26px
+    cursor: pointer
+    z-index: 1
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after 
+    display: block
+    position: absolute
+    width: 100%
+    height: 2px
+    background-color: #000000
+    transition-duration: .25s
+
+  .menu__btn > span::before 
+    content: ''
+    top: -8px
+
+  .menu__btn > span::after 
+    content: ''
+    top: 8px
+  .nav 
+    display: block
+    position: fixed
+    visibility: hidden
+    top: 0
+    left: -100%
+    width: 400px
+    height: 100%
+    margin: 0
+    padding: 80px 0
+    list-style: none
+    background: #ECEFF1 url(../img/fonemenu.jpg) no-repeat center
+    transition-duration: .25s
+    
+  .nav__item
+    display: block
+    padding: 12px 24px
+    color: #000000
+    font-weight: 600
+    text-decoration: none
+    transition-duration: .25s
+    font-size: 2rem
+
+  .main
+    &__first
+      display: block
+      padding: 2rem
+  .menu
+    margin-right: 0
+    margin-bottom: 2rem
+    min-height: 110px
+    display: flex
+    align-items: center
+    height: 0
+    &__logo
+      display: contents
+      align-items: center
+      font-size: 25px
+      &-img
+        max-width: 100px
+        margin: 1rem
+
+
+  .swiper-container 
+    flex-basis: 100%
+    min-height: 75vh
+  .toorder
+    &__social
+      margin-right: 0.5rem
+      margin-top: 4rem
+    &__form
+      margin-top: 1rem
+  .tabs ul li 
+    padding: 10px 25px
+  .nav a 
+    padding: 30px 10px
+  .contacts
+    &__images 
+      max-width: 30rem
+      min-height: 20rem
+  .toorder
+    &__info 
+      font-size: 25px
+  .first
+    flex-wrap: wrap
+    &-img 
+      max-width: 250px
+      max-height: 250px
+    &__title
+      margin-top: 1rem
+  .toorder
+    &__social
+      display: none
+  .social
+    margin: auto
+    a
+      padding-right: 10px
+    &-img1 
+      width: 25px
+      height: 25px
+    &-img2 
+      width: 28px
+      height: 28px
+    &-img3 
+      width: 28px
+      height: 28px
+    &-img 
+      width: 25px
+      height: 25px
+@media  screen and (min-width : 600px) and (max-width : 767px)
+  #menu
+    &__toggle 
+      opacity: 0
+      
+
+  #menu__toggle:checked ~ .menu__btn > span 
+    transform: rotate(45deg)
+  #menu__toggle:checked ~ .menu__btn > span::before 
+    top: 0
+    transform: rotate(0)
+  #menu__toggle:checked ~ .menu__btn > span::after 
+    top: 0
+    transform: rotate(90deg)
+  #menu__toggle:checked ~ .menu__nav 
+    visibility: visible
+    left: 0
+    
+  .menu__btn 
+    display: flex
+    align-items: center
+    position: absolute
+    right: 130px
+    width: 26px
+    height: 26px
+    cursor: pointer
+    z-index: 1
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after 
+    display: block
+    position: absolute
+    width: 100%
+    height: 2px
+    background-color: #000000
+    transition-duration: .25s
+
+  .menu__btn > span::before 
+    content: ''
+    top: -8px
+
+  .menu__btn > span::after 
+    content: ''
+    top: 8px
+  .nav 
+    display: block
+    position: fixed
+    visibility: hidden
+    top: 0
+    left: -100%
+    width: 400px
+    height: 100%
+    margin: 0
+    padding: 80px 0
+    list-style: none
+    background: #ECEFF1 url(../img/fonemenu.jpg) no-repeat center
+    transition-duration: .25s
+    
+  .nav__item
+    display: block
+    padding: 12px 24px
+    color: #000000
+    font-weight: 600
+    text-decoration: none
+    transition-duration: .25s
+    font-size: 2rem
+
+  .main
+    &__first
+      display: block
+      padding: 2rem
+  .menu
+    margin-right: 0
+    margin-bottom: 2rem
+    min-height: 110px
+    display: flex
+    align-items: center
+    height: 0
+    &__logo
+      display: contents
+      align-items: center
+      font-size: 25px
+      &-img
+        max-width: 100px
+        margin: 1rem
+
+
+  .swiper-container 
+    flex-basis: 100%
+    min-height: 75vh
+  .toorder
+    &__social
+      margin-right: 0.5rem
+      margin-top: 4rem
+    &__form
+      margin-top: 1rem
+  .tabs ul li 
+    padding: 10px 25px
+  .nav a 
+    padding: 30px 10px
+  .contacts
+    &__images 
+      max-width: 30rem
+      min-height: 20rem
+  .toorder
+    &__info 
+      font-size: 25px
+  .first
+    flex-wrap: wrap
+    &-img 
+      max-width: 250px
+      max-height: 250px
+    &__title
+      margin-top: 1rem
+    &__btn
+      font-size: 23px
+    &__text
+      font-size: 20px
+  .toorder
+    &__social
+      display: none
+    &__form 
+      min-width: 23rem
+    &__btn 
+      font-size: 20px
+  .social
+    display: none
+    a
+      padding-right: 10px
+    &-img1 
+      width: 25px
+      height: 25px
+    &-img2 
+      width: 28px
+      height: 28px
+    &-img3 
+      width: 28px
+      height: 28px
+    &-img 
+      width: 25px
+      height: 25px
+  .ordercard
+    &__text 
+      line-height: 1.5rem

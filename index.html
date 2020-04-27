@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="css/animate.css" media="all" />
   <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=c982f926-789a-4598-be8b-1a9592cdc6ab&lang=ru_RU"
+    type="text/javascript">
+  </script>
   <title>Подставки под миски</title>
 </head>
 
@@ -20,6 +23,11 @@
         <div class="menu">
           <span class="logo menu__logo wow fadeInLeft"><a href="index.html"> <img src="img/thepetsour.png" alt=""
                 class="menu__logo-img">THEPETSOUR</a></span>
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+
           <nav class="nav menu__nav">
             <ul>
               <li>
@@ -32,14 +40,14 @@
                 <a href="#3" class="nav__item"><img src="img/hammer-solid.svg" alt="work" class="nav__item-img">Наши
                   работы</a>
               </li>
-              <li><a href="#4" class="nav__item"><img src="img/comments-solid.svg" alt="rowes"
+              <li><a href="#4" class="nav__item"><img src=" img/comments-solid.svg" alt="rowes"
                     class="nav__item-img">Отзывы</a></li>
               <li><a href="#5" class="nav__item"><img src="img/map-marked-alt-solid.svg" alt="map"
                     class="nav__item-img">Карата заказов</a>
               </li>
               <li>
                 <a href="#6" class="nav__item"><img src="img/address-card-solid.svg" alt="address"
-                    class="nav__item-img">Контакты</a>
+                    class="nav__item-img">Инфо</a>
               </li>
               <li><a href="#7" class="nav__item"><img src="img/cart-arrow-down-solid.svg" alt="pay"
                     class="nav__item-img">Заказать</a></li>
@@ -75,8 +83,28 @@
                 </button>
               </div>
             </div>
-            <div class="swiper-slide" id="2"></div>
+            <div class="swiper-slide about" id="2">
+              <div class="about__title">О нас</div>
+              <p class="about__text">
+                ✨Всем привет! Давайте знакомиться!🌟
+                "Подставки под миски " это мы: Катя и Вадим 💑
+                У нас живут 2 больших кота и мне (Кате 😊)надоело, что после того, как они поедят, еда остается везде.
+                🙅 Я попросила Вадима придумать что-то такое, чтобы чистота в доме сохранилась.
+                😺Вот он и придумал)
+                👀А потом увидела подруга и захотела такую же, а потом подруга подруги и тд...
+                ✅Мы делаем подставки сами начиная от выбора материала, до элементов декора!
+                ✅Миски устойчиво стоят и даже самые активные носы не смогут размазать еду вокруг себя!
+                ✅Так как мы изначально делали их так, чтобы в первую очередь было удобно животным и чисто нам, все
+                изделия мы делаем "как для себя".
+                Вот такая вот история!
+                🔥А если Вы хотите, чтобы такая подставка оказалась и в вашем доме, просто загляните в раздел наши
+                работы и напишите нам какая Вам понравилась, чтобы мы ответили на все Ваши вопросы.
+                💥P. S. Кстати если Вы хотите подставку, которой у нас еще нет - с удовольствием сделаем ее!"
+              </p>
+            </div>
             <div class="swiper-slide work" id="3">
+              <div class="work__title">Наши работы</div>
+
               <div class="tabs">
                 <input type="radio" id="tab1" name="tab-control" checked />
                 <input type="radio" id="tab2" name="tab-control" />
@@ -106,17 +134,15 @@
                     <div class="cards__animal">
                       <div class="card__animal">
                         <div class="card__backinfo">
-                          <a href="img/dog2.png" data-lightbox="image-1">
-
-                            <img src="img/dog2.png" alt="Dog" class="card__backinfo-images">
-                            <div class="card__backinfo-back">
-                              <p class="card__backinfo-price">Цена: 4000р</p>
-                              <p class="card__backinfo-size">
-                                Высота-40см,<br>
-                                Длина-40см,<br>
-                                Ширина-40см.<br>
-                              </p>
-                            </div>
+                          <img src="img/dog1.png" alt="Dog" class="card__backinfo-images">
+                          <div class="card__backinfo-back">
+                            <p class="card__backinfo-price">Цена: 2300р</p>
+                            <p class="card__backinfo-size">
+                              Высота-10см,<br>
+                              Длина-35см,<br>
+                              Ширина-20см.<br>
+                            </p>
+                          </div>
                           </a>
                         </div>
                         <button class="btn card__animal-btn btn--primary "><a href="#7"><img
@@ -128,11 +154,11 @@
                         <div class="card__backinfo">
                           <img src="img/dog2.png" alt="Dog" class="card__backinfo-images">
                           <div class="card__backinfo-back">
-                            <p class="card__backinfo-price">Цена: 4000р</p>
+                            <p class="card__backinfo-price">Цена: 1800р</p>
                             <p class="card__backinfo-size">
-                              Высота-40см,<br>
-                              Длина-40см,<br>
-                              Ширина-40см.<br>
+                              Высота-12см,<br>
+                              Длина-30см,<br>
+                              Ширина-18см.<br>
                             </p>
                           </div>
 
@@ -146,11 +172,11 @@
                         <div class="card__backinfo">
                           <img src="img/dog3.png" alt="Dog" class="card__backinfo-images">
                           <div class="card__backinfo-back">
-                            <p class="card__backinfo-price">Цена: 4000р</p>
+                            <p class="card__backinfo-price">Цена: 2600р</p>
                             <p class="card__backinfo-size">
-                              Высота-40см,<br>
-                              Длина-40см,<br>
-                              Ширина-40см.<br>
+                              Высота-10см,<br>
+                              Длина-55см,<br>
+                              Ширина-20см.<br>
                             </p>
                           </div>
 
@@ -162,13 +188,13 @@
 
                       <div class="card__animal">
                         <div class="card__backinfo">
-                          <img src="img/dog1.jpg" alt="Dog" class="card__backinfo-images">
+                          <img src="img/dog4.png" alt="Dog" class="card__backinfo-images">
                           <div class="card__backinfo-back">
-                            <p class="card__backinfo-price">Цена: 4000р</p>
+                            <p class="card__backinfo-price">Цена: 3000р</p>
                             <p class="card__backinfo-size">
-                              Высота-40см,<br>
-                              Длина-40см,<br>
-                              Ширина-40см.<br>
+                              Высота-25см,<br>
+                              Длина-51см,<br>
+                              Ширина-20см.<br>
                             </p>
                           </div>
 
@@ -180,13 +206,13 @@
 
                       <div class="card__animal">
                         <div class="card__backinfo">
-                          <img src="img/dog1.jpg" alt="Dog" class="card__backinfo-images">
+                          <img src="img/dog5.png" alt="Dog" class="card__backinfo-images">
                           <div class="card__backinfo-back">
-                            <p class="card__backinfo-price">Цена: 4000р</p>
+                            <p class="card__backinfo-price">Цена: 3300р</p>
                             <p class="card__backinfo-size">
-                              Высота-40см,<br>
-                              Длина-40см,<br>
-                              Ширина-40см.<br>
+                              Высота-24см,<br>
+                              Длина-45.5см,<br>
+                              Ширина-26см.<br>
                             </p>
                           </div>
 
@@ -198,13 +224,13 @@
 
                       <div class="card__animal">
                         <div class="card__backinfo">
-                          <img src="img/dog1.jpg" alt="Dog" class="card__backinfo-images">
+                          <img src="img/dog6.png" alt="Dog" class="card__backinfo-images">
                           <div class="card__backinfo-back">
-                            <p class="card__backinfo-price">Цена: 4000р</p>
+                            <p class="card__backinfo-price">Цена: 1800р</p>
                             <p class="card__backinfo-size">
-                              Высота-40см,<br>
-                              Длина-40см,<br>
-                              Ширина-40см.<br>
+                              Высота-6см,<br>
+                              Длина-30см,<br>
+                              Ширина-18см.<br>
                             </p>
                           </div>
 
@@ -216,13 +242,14 @@
 
                       <div class="card__animal">
                         <div class="card__backinfo">
-                          <img src="img/dog1.jpg" alt="Dog" class="card__backinfo-images">
+                          <img src="img/dog7.png" alt="Dog" class="card__backinfo-images">
                           <div class="card__backinfo-back">
-                            <p class="card__backinfo-price">Цена: 4000р</p>
+                            <p class="card__backinfo-price">Цена: 2000р</p>
                             <p class="card__backinfo-size">
-                              Высота-40см,<br>
-                              Длина-40см,<br>
-                              Ширина-40см.<br>
+                              Высота-8см,<br>
+                              Длина-22см,<br>
+                              Ширина-63см.<br>
+                              Обьем мисок 0.5л
                             </p>
                           </div>
 
@@ -234,13 +261,14 @@
 
                       <div class="card__animal">
                         <div class="card__backinfo">
-                          <img src="img/dog1.jpg" alt="Dog" class="card__backinfo-images">
+                          <img src="img/dog8.png" alt="Dog" class="card__backinfo-images">
                           <div class="card__backinfo-back">
-                            <p class="card__backinfo-price">Цена: 4000р</p>
+                            <p class="card__backinfo-price">Цена: 3500р</p>
                             <p class="card__backinfo-size">
-                              Высота-40см,<br>
-                              Длина-40см,<br>
-                              Ширина-40см.<br>
+                              Высота-37см,<br>
+                              Длина-53см,<br>
+                              Ширина-30см.<br>
+                              Объём мисок 2л
                             </p>
                           </div>
 
@@ -252,13 +280,177 @@
 
                       <div class="card__animal">
                         <div class="card__backinfo">
-                          <img src="img/dog1.jpg" alt="Dog" class="card__backinfo-images">
+                          <img src="img/dog9.png" alt="Dog" class="card__backinfo-images">
                           <div class="card__backinfo-back">
-                            <p class="card__backinfo-price">Цена: 4000р</p>
+                            <p class="card__backinfo-price">Цена: 3500р</p>
                             <p class="card__backinfo-size">
-                              Высота-40см,<br>
-                              Длина-40см,<br>
-                              Ширина-40см.<br>
+                              Высота-12см,<br>
+                              Длина-55см,<br>
+                              Ширина-36см.<br>
+                              Объём мисок 350мл и 500мл
+                            </p>
+                          </div>
+
+                        </div>
+                        <button class="btn card__animal-btn btn--primary "><a href="#7"><img
+                              src="img/shopping-cart-solid.svg" alt="pay" class="card__animal-pay">
+                            Заказать</a></button>
+                      </div>
+
+                      <div class="card__animal">
+                        <div class="card__backinfo">
+                          <img src="img/dog10.png" alt="Dog" class="card__backinfo-images">
+                          <div class="card__backinfo-back">
+                            <p class="card__backinfo-price">Цена: 3500р</p>
+                            <p class="card__backinfo-size">
+                              Высота-42см,<br>
+                              Длина-53см,<br>
+                              Ширина-30см.<br>
+                              Объём мисок 2 литра
+                            </p>
+                          </div>
+
+                        </div>
+                        <button class="btn card__animal-btn btn--primary "><a href="#7"><img
+                              src="img/shopping-cart-solid.svg" alt="pay" class="card__animal-pay">
+                            Заказать</a></button>
+                      </div>
+
+                      <div class="card__animal">
+                        <div class="card__backinfo">
+                          <img src="img/dog11.png" alt="Dog" class="card__backinfo-images">
+                          <div class="card__backinfo-back">
+                            <p class="card__backinfo-price">Цена: 3000р</p>
+                            <p class="card__backinfo-size">
+                              Высота-15см,<br>
+                              Длина-55см,<br>
+                              Ширина-25см.<br>
+                              Объём мисок 0,5л и 1л
+                            </p>
+                          </div>
+
+                        </div>
+                        <button class="btn card__animal-btn btn--primary "><a href="#7"><img
+                              src="img/shopping-cart-solid.svg" alt="pay" class="card__animal-pay">
+                            Заказать</a></button>
+                      </div>
+
+                      <div class="card__animal">
+                        <div class="card__backinfo">
+                          <img src="img/dog12.png" alt="Dog" class="card__backinfo-images">
+                          <div class="card__backinfo-back">
+                            <p class="card__backinfo-price">Цена: 2300р</p>
+                            <p class="card__backinfo-size">
+                              Высота-12см,<br>
+                              Длина-30см,<br>
+                              Ширина-18см.<br>
+                            </p>
+                          </div>
+
+                        </div>
+                        <button class="btn card__animal-btn btn--primary "><a href="#7"><img
+                              src="img/shopping-cart-solid.svg" alt="pay" class="card__animal-pay">
+                            Заказать</a></button>
+                      </div>
+
+                      <div class="card__animal">
+                        <div class="card__backinfo">
+                          <img src="img/dog13.png" alt="Dog" class="card__backinfo-images">
+                          <div class="card__backinfo-back">
+                            <p class="card__backinfo-price">Цена: 3300р</p>
+                            <p class="card__backinfo-size">
+                              Высота-20см,<br>
+                              Длина-45.5см,<br>
+                              Ширина-24см.<br>
+                              Объём мисок 1 литр
+                            </p>
+                          </div>
+
+                        </div>
+                        <button class="btn card__animal-btn btn--primary "><a href="#7"><img
+                              src="img/shopping-cart-solid.svg" alt="pay" class="card__animal-pay">
+                            Заказать</a></button>
+                      </div>
+
+                      <div class="card__animal">
+                        <div class="card__backinfo">
+                          <img src="img/dog14.png" alt="Dog" class="card__backinfo-images">
+                          <div class="card__backinfo-back">
+                            <p class="card__backinfo-price">Цена: 2300р</p>
+                            <p class="card__backinfo-size">
+                              Высота-12см,<br>
+                              Длина-42см,<br>
+                              Ширина-18см.<br>
+                            </p>
+                          </div>
+
+                        </div>
+                        <button class="btn card__animal-btn btn--primary "><a href="#7"><img
+                              src="img/shopping-cart-solid.svg" alt="pay" class="card__animal-pay">
+                            Заказать</a></button>
+                      </div>
+                      <div class="card__animal">
+                        <div class="card__backinfo">
+                          <img src="img/dog15.png" alt="Dog" class="card__backinfo-images">
+                          <div class="card__backinfo-back">
+                            <p class="card__backinfo-price">Цена: 2800р</p>
+                            <p class="card__backinfo-size">
+                              Высота-12см,<br>
+                              Длина-42см,<br>
+                              Ширина-20см.<br>
+                            </p>
+                          </div>
+
+                        </div>
+                        <button class="btn card__animal-btn btn--primary "><a href="#7"><img
+                              src="img/shopping-cart-solid.svg" alt="pay" class="card__animal-pay">
+                            Заказать</a></button>
+                      </div>
+                      <div class="card__animal">
+                        <div class="card__backinfo">
+                          <img src="img/dog16.png" alt="Dog" class="card__backinfo-images">
+                          <div class="card__backinfo-back">
+                            <p class="card__backinfo-price">Цена: 3400р</p>
+                            <p class="card__backinfo-size">
+                              Длина-53см,<br>
+                              Ширина-25см.<br>
+                              Объём мисок 0,5л и 1л
+                            </p>
+                          </div>
+
+                        </div>
+                        <button class="btn card__animal-btn btn--primary "><a href="#7"><img
+                              src="img/shopping-cart-solid.svg" alt="pay" class="card__animal-pay">
+                            Заказать</a></button>
+                      </div>
+
+                      <div class="card__animal">
+                        <div class="card__backinfo">
+                          <img src="img/dog17.png" alt="Dog" class="card__backinfo-images">
+                          <div class="card__backinfo-back">
+                            <p class="card__backinfo-price">Цена: 2600р</p>
+                            <p class="card__backinfo-size">
+                              Высота-18см,<br>
+                              Длина-37см,<br>
+                              Ширина-22см.<br>
+                            </p>
+                          </div>
+
+                        </div>
+                        <button class="btn card__animal-btn btn--primary "><a href="#7"><img
+                              src="img/shopping-cart-solid.svg" alt="pay" class="card__animal-pay">
+                            Заказать</a></button>
+                      </div>
+
+                      <div class="card__animal">
+                        <div class="card__backinfo">
+                          <img src="img/dog18.png" alt="Dog" class="card__backinfo-images">
+                          <div class="card__backinfo-back">
+                            <p class="card__backinfo-price">Цена: 2900р</p>
+                            <p class="card__backinfo-size">
+                              Высота-12см,<br>
+                              Длина-54.5см,<br>
+                              Ширина-18см.<br>
                             </p>
                           </div>
 
@@ -271,16 +463,372 @@
                   </section>
                   <section>
                     <h2>Для кошек</h2>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quas
-                    adipisci a accusantium eius ut voluptatibus ad impedit nulla, ipsa
-                    qui. Quasi temporibus eos commodi aliquid impedit amet, similique
-                    nulla.
+                    <div class="cards__animal">
+                      <div class="card__animal">
+                        <div class="card__backinfo">
+                          <img src="img/cat1.png" alt="Cat" class="card__backinfo-images">
+                          <div class="card__backinfo-back">
+                            <p class="card__backinfo-price">Цена: 2000р</p>
+                            <p class="card__backinfo-size">
+                              Высота-12см,<br>
+                              Длина-30см,<br>
+                              Ширина-18см.<br>
+                            </p>
+                          </div>
+                          </a>
+                        </div>
+                        <button class="btn card__animal-btn btn--primary "><a href="#7"><img
+                              src="img/shopping-cart-solid.svg" alt="pay" class="card__animal-pay">
+                            Заказать</a></button>
+                      </div>
+
+                      <div class="card__animal">
+                        <div class="card__backinfo">
+                          <img src="img/cat2.png" alt="Cat" class="card__backinfo-images">
+                          <div class="card__backinfo-back">
+                            <p class="card__backinfo-price">Цена: 2100р</p>
+                            <p class="card__backinfo-size">
+                              Высота-12см,<br>
+                              Длина-42см,<br>
+                              Ширина-20см.<br>
+                            </p>
+                          </div>
+                          </a>
+                        </div>
+                        <button class="btn card__animal-btn btn--primary "><a href="#7"><img
+                              src="img/shopping-cart-solid.svg" alt="pay" class="card__animal-pay">
+                            Заказать</a></button>
+                      </div>
+
+                      <div class="card__animal">
+                        <div class="card__backinfo">
+                          <img src="img/cat3.png" alt="Cat" class="card__backinfo-images">
+                          <div class="card__backinfo-back">
+                            <p class="card__backinfo-price">Цена: 2700р</p>
+                            <p class="card__backinfo-size">
+                              Высота-12см,<br>
+                              Длина-60см,<br>
+                              Ширина-18см.<br>
+                            </p>
+                          </div>
+                          </a>
+                        </div>
+                        <button class="btn card__animal-btn btn--primary "><a href="#7"><img
+                              src="img/shopping-cart-solid.svg" alt="pay" class="card__animal-pay">
+                            Заказать</a></button>
+                      </div>
+
+                      <div class="card__animal">
+                        <div class="card__backinfo">
+                          <img src="img/cat4.png" alt="Cat" class="card__backinfo-images">
+                          <div class="card__backinfo-back">
+                            <p class="card__backinfo-price">Цена: 1800р</p>
+                            <p class="card__backinfo-size">
+                              Высота-12см,<br>
+                              Длина-44см,<br>
+                              Ширина-20см.<br>
+                            </p>
+                          </div>
+                          </a>
+                        </div>
+                        <button class="btn card__animal-btn btn--primary "><a href="#7"><img
+                              src="img/shopping-cart-solid.svg" alt="pay" class="card__animal-pay">
+                            Заказать</a></button>
+                      </div>
+
+                      <div class="card__animal">
+                        <div class="card__backinfo">
+                          <img src="img/cat5.png" alt="Cat" class="card__backinfo-images">
+                          <div class="card__backinfo-back">
+                            <p class="card__backinfo-price">Цена: 2100р</p>
+                            <p class="card__backinfo-size">
+                              Высота-12см,<br>
+                              Длина-34см,<br>
+                              Ширина-20см.<br>
+                            </p>
+                          </div>
+                          </a>
+                        </div>
+                        <button class="btn card__animal-btn btn--primary "><a href="#7"><img
+                              src="img/shopping-cart-solid.svg" alt="pay" class="card__animal-pay">
+                            Заказать</a></button>
+                      </div>
+
+                      <div class="card__animal">
+                        <div class="card__backinfo">
+                          <img src="img/cat6.png" alt="Cat" class="card__backinfo-images">
+                          <div class="card__backinfo-back">
+                            <p class="card__backinfo-price">Цена: 1800р</p>
+                            <p class="card__backinfo-size">
+                              Высота-12см,<br>
+                              Длина-44см,<br>
+                              Ширина-20см.<br>
+                            </p>
+                          </div>
+                          </a>
+                        </div>
+                        <button class="btn card__animal-btn btn--primary "><a href="#7"><img
+                              src="img/shopping-cart-solid.svg" alt="pay" class="card__animal-pay">
+                            Заказать</a></button>
+                      </div>
+                      <div class="card__animal">
+                        <div class="card__backinfo">
+                          <img src="img/cat7.png" alt="Cat" class="card__backinfo-images">
+                          <div class="card__backinfo-back">
+                            <p class="card__backinfo-price">Цена: 2300р</p>
+                            <p class="card__backinfo-size">
+                              Высота-10см,<br>
+                              Длина-35см,<br>
+                              Ширина-20см.<br>
+                            </p>
+                          </div>
+                          </a>
+                        </div>
+                        <button class="btn card__animal-btn btn--primary "><a href="#7"><img
+                              src="img/shopping-cart-solid.svg" alt="pay" class="card__animal-pay">
+                            Заказать</a></button>
+                      </div>
+
+                      <div class="card__animal">
+                        <div class="card__backinfo">
+                          <img src="img/cat8.png" alt="Cat" class="card__backinfo-images">
+                          <div class="card__backinfo-back">
+                            <p class="card__backinfo-price">Цена: 2300р</p>
+                            <p class="card__backinfo-size">
+                              Высота-12см,<br>
+                              Длина-49см,<br>
+                              Ширина-18см,<br>
+                              Объём мисок 350мл
+                            </p>
+                          </div>
+                          </a>
+                        </div>
+                        <button class="btn card__animal-btn btn--primary "><a href="#7"><img
+                              src="img/shopping-cart-solid.svg" alt="pay" class="card__animal-pay">
+                            Заказать</a></button>
+                      </div>
+
+                      <div class="card__animal">
+                        <div class="card__backinfo">
+                          <img src="img/cat9.png" alt="Cat" class="card__backinfo-images">
+                          <div class="card__backinfo-back">
+                            <p class="card__backinfo-price">Цена: 2300р</p>
+                            <p class="card__backinfo-size">
+                              Высота-15см,<br>
+                              Длина-30см,<br>
+                              Ширина-18см,<br>
+                            </p>
+                          </div>
+                          </a>
+                        </div>
+                        <button class="btn card__animal-btn btn--primary "><a href="#7"><img
+                              src="img/shopping-cart-solid.svg" alt="pay" class="card__animal-pay">
+                            Заказать</a></button>
+                      </div>
+
+                      <div class="card__animal">
+                        <div class="card__backinfo">
+                          <img src="img/cat10.png" alt="Cat" class="card__backinfo-images">
+                          <div class="card__backinfo-back">
+                            <p class="card__backinfo-price">Цена: 4000р</p>
+                            <p class="card__backinfo-size">
+                              Высота-5см,31см<br>
+                              Длина-58см,<br>
+                              Ширина-29см,<br>
+                            </p>
+                          </div>
+                          </a>
+                        </div>
+                        <button class="btn card__animal-btn btn--primary "><a href="#7"><img
+                              src="img/shopping-cart-solid.svg" alt="pay" class="card__animal-pay">
+                            Заказать</a></button>
+                      </div>
+
+                      <div class="card__animal">
+                        <div class="card__backinfo">
+                          <img src="img/cat11.png" alt="Cat" class="card__backinfo-images">
+                          <div class="card__backinfo-back">
+                            <p class="card__backinfo-price">Цена: 2100р</p>
+                            <p class="card__backinfo-size">
+                              Высота-12см<br>
+                              Длина-58см,<br>
+                              Ширина-20см,<br>
+                            </p>
+                          </div>
+                          </a>
+                        </div>
+                        <button class="btn card__animal-btn btn--primary "><a href="#7"><img
+                              src="img/shopping-cart-solid.svg" alt="pay" class="card__animal-pay">
+                            Заказать</a></button>
+                      </div>
+
+                      <div class="card__animal">
+                        <div class="card__backinfo">
+                          <img src="img/cat12.png" alt="Cat" class="card__backinfo-images">
+                          <div class="card__backinfo-back">
+                            <p class="card__backinfo-price">Цена: 2000р</p>
+                            <p class="card__backinfo-size">
+                              Высота-8см<br>
+                              Длина-63см,<br>
+                              Ширина-22см,<br>
+                              Объём мисок 0,5л
+                            </p>
+                          </div>
+                          </a>
+                        </div>
+                        <button class="btn card__animal-btn btn--primary "><a href="#7"><img
+                              src="img/shopping-cart-solid.svg" alt="pay" class="card__animal-pay">
+                            Заказать</a></button>
+                      </div>
+
+                      <div class="card__animal">
+                        <div class="card__backinfo">
+                          <img src="img/cat13.png" alt="Cat" class="card__backinfo-images">
+                          <div class="card__backinfo-back">
+                            <p class="card__backinfo-price">Цена: 2500р</p>
+                            <p class="card__backinfo-size">
+                              Высота-12см<br>
+                              Длина-60см,<br>
+                              Ширина-18см,<br>
+                              Объём мисок 0.8л
+                            </p>
+                          </div>
+                          </a>
+                        </div>
+                        <button class="btn card__animal-btn btn--primary "><a href="#7"><img
+                              src="img/shopping-cart-solid.svg" alt="pay" class="card__animal-pay">
+                            Заказать</a></button>
+                      </div>
+
+                      <div class="card__animal">
+                        <div class="card__backinfo">
+                          <img src="img/cat14.png" alt="Cat" class="card__backinfo-images">
+                          <div class="card__backinfo-back">
+                            <p class="card__backinfo-price">Цена: 1500р</p>
+                            <p class="card__backinfo-size">
+                              Высота-7,10,13,16,20,22см<br>
+                              Длина-32см,<br>
+                              Ширина-14.5см,<br>
+                            </p>
+                          </div>
+                          </a>
+                        </div>
+                        <button class="btn card__animal-btn btn--primary "><a href="#7"><img
+                              src="img/shopping-cart-solid.svg" alt="pay" class="card__animal-pay">
+                            Заказать</a></button>
+                      </div>
+
+                      <div class="card__animal">
+                        <div class="card__backinfo">
+                          <img src="img/cat15.png" alt="Cat" class="card__backinfo-images">
+                          <div class="card__backinfo-back">
+                            <p class="card__backinfo-price">Цена: 2300р</p>
+                            <p class="card__backinfo-size">
+                              Высота-12см<br>
+                              Длина-30см,<br>
+                              Ширина-18см,<br>
+                            </p>
+                          </div>
+                          </a>
+                        </div>
+                        <button class="btn card__animal-btn btn--primary "><a href="#7"><img
+                              src="img/shopping-cart-solid.svg" alt="pay" class="card__animal-pay">
+                            Заказать</a></button>
+                      </div>
+
+                      <div class="card__animal">
+                        <div class="card__backinfo">
+                          <img src="img/cat16.png" alt="Cat" class="card__backinfo-images">
+                          <div class="card__backinfo-back">
+                            <p class="card__backinfo-price">Цена: 1800р</p>
+                            <p class="card__backinfo-size">
+                              Высота-12см<br>
+                              Длина-30см,<br>
+                              Ширина-20см,<br>
+                            </p>
+                          </div>
+                          </a>
+                        </div>
+                        <button class="btn card__animal-btn btn--primary "><a href="#7"><img
+                              src="img/shopping-cart-solid.svg" alt="pay" class="card__animal-pay">
+                            Заказать</a></button>
+                      </div>
+                    </div>
                   </section>
                   <section>
                     <h2>Прочее</h2>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nemo
-                    ducimus eius, magnam error quisquam sunt voluptate labore, excepturi
-                    numquam! Alias libero optio sed harum debitis! Veniam, quia in eum.
+                    <div class="cards__animal">
+                      <div class="card__animal">
+                        <div class="card__backinfo">
+                          <img src="img/other1.png" alt="tree" class="card__backinfo-images">
+                          <div class="card__backinfo-back">
+                            <p class="card__backinfo-price">Цена: 700р</p>
+                            <p class="card__backinfo-size">
+                              Высота-30см,<br>
+                            </p>
+                          </div>
+
+                        </div>
+                        <button class="btn card__animal-btn btn--primary "><a href="#7"><img
+                              src="img/shopping-cart-solid.svg" alt="pay" class="card__animal-pay">
+                            Заказать</a></button>
+                      </div>
+
+                      <div class="card__animal">
+                        <div class="card__backinfo">
+                          <img src="img/other2.png" alt="hanger" class="card__backinfo-images">
+                          <div class="card__backinfo-back">
+                            <p class="card__backinfo-price">Цена: 1500р</p>
+                            <p class="card__backinfo-size">
+                              Высота-20см,<br>
+                              Длина-60см
+                            </p>
+                          </div>
+
+                        </div>
+                        <button class="btn card__animal-btn btn--primary "><a href="#7"><img
+                              src="img/shopping-cart-solid.svg" alt="pay" class="card__animal-pay">
+                            Заказать</a></button>
+                      </div>
+
+                      <div class="card__animal">
+                        <div class="card__backinfo">
+                          <img src="img/other3.png" alt="hanger" class="card__backinfo-images">
+                          <div class="card__backinfo-back">
+                            <p class="card__backinfo-price">Цена: 1500р</p>
+                            <p class="card__backinfo-size">
+                              Высота-6см,<br>
+                              Длина-40см,<br>
+                              Ширина-20см
+                            </p>
+                          </div>
+
+                        </div>
+                        <button class="btn card__animal-btn btn--primary "><a href="#7"><img
+                              src="img/shopping-cart-solid.svg" alt="pay" class="card__animal-pay">
+                            Заказать</a></button>
+                      </div>
+
+                      <div class="card__animal">
+                        <div class="card__backinfo">
+                          <img src="img/other4.png" alt="hanger" class="card__backinfo-images">
+                          <div class="card__backinfo-back">
+                            <p class="card__backinfo-price">Цена: 2500р</p>
+                            <p class="card__backinfo-size">
+                              Высота-30см,<br>
+                              Длина-70см,<br>
+                              Ширина-20см
+                            </p>
+                          </div>
+
+                        </div>
+                        <button class="btn card__animal-btn btn--primary "><a href="#7"><img
+                              src="img/shopping-cart-solid.svg" alt="pay" class="card__animal-pay">
+                            Заказать</a></button>
+                      </div>
+
+
+                    </div>
                   </section>
                 </div>
               </div>
@@ -358,30 +906,183 @@
                       знаю, куда обращаться)</p>
                   </div>
                 </div>
+
+                <div class="card">
+                  <div class="card-body">
+                    <img src="img/rew7.jpg" alt="review" class="review-img">
+                    <h5 class="card-title">Настасья Вл Вахрина</h5>
+                    <p class="card-text">Случайно наткнулась на эту группу и сразу очень понпавились работы мастеров.
+                      Долго любовалась и решила заказать! Очень удобно, что можно подобрать цвет к интерьеру! Спасибо
+                      большое за внимание к пожеланиям клиента! Теперь хожу и любуюсь, всё чисто, аккуратно, стильно,
+                      красиво! Хвосты мои совершенно не смутились по поводу новых мисок и с удовольствием трескали
+                      вкусняшки! Ещё раз огромное спасибо за ваш труд!!</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-body">
+                    <img src="img/rew8.jpg" alt="review" class="review-img">
+                    <h5 class="card-title">Наталья Колмакова (Патракова)</h5>
+                    <p class="card-text">Получили нашу подставочку, все довольны, вписалась в интерьер, коту удобно
+                      кушать, я думаю ему тоже понравилась подставка и миски. Спасибо большое</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-body">
+                    <img src="img/rew9.jpg" alt="review" class="review-img">
+                    <h5 class="card-title">Анастасия Новацкая</h5>
+                    <p class="card-text">Заказали у ребят миску для наших любимцев. Остались очень довольны и мы и
+                      питомцы. 👌🏻🐾 Вадим на каждом этапе отправляет фото и консультируется, как нам лучше сделать.
+                      Учитывает все пожелания. 👍Рекомендуем!😉</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-body">
+                    <img src="img/rew10.jpg" alt="review" class="review-img">
+                    <h5 class="card-title">Alex Reznik</h5>
+                    <p class="card-text">Заказывали у Вадима двойную подставку для двух собак, сделал всё в точности по
+                      макету и учёл все наши пожелания. Подставкой для мисок мы очень довольны, отличный получился
+                      кастом ручной работы дополнивший наш кухонный интерьер, за что большое спасибо Вадиму! 👏🏻😃
+                      Вадим Некрасов - отличный клиентоориентированный мастер, всегда был на связи, изготовил всё
+                      быстро, аккуратно и качество на высоте! Теперь думаем заказать подставку и для кота.</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-body">
+                    <img src="img/rew11.jpg" alt="review" class="review-img">
+                    <h5 class="card-title">Сабина Курбанова</h5>
+                    <p class="card-text">Заказали у Вадима крутую миску)) Пока что всем довольны и мы, и кот😻🤪</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-body">
+                    <img src="img/rew12.jpg" alt="review" class="review-img">
+                    <h5 class="card-title">Елена Шитова (Губина)</h5>
+                    <p class="card-text">Спасибо вам большое за замечательную проделанную работу. Подставка была сделана
+                      по моему запросу,по моим "капризам". Я осталась очень довольна! В реальности просто *бомба*!!!!
+                      Молодцы,продолжайте и дальше радовать животных и их владельцев</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <img src="img/rew13.jpg" alt="review" class="review-img">
+                    <h5 class="card-title">Нина Максименко</h5>
+                    <p class="card-text">Большое спасибо! Очень приятно было общаться с коллективом при заказе
+                      подставки. А самое главное мои животные остались довольные у них теперь своя столовка!</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-body">
+                    <img src="img/rew14.jpg" alt="review" class="review-img">
+                    <h5 class="card-title">Оленька Тихонова</h5>
+                    <p class="card-text">Спасибо огромное за подставку под мисочки! 👍 Карамуся довольна подарком к
+                      своему Дню рождения 🥳🎉</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <img src="img/rew15.jpg" alt="review" class="review-img">
+                    <h5 class="card-title">Надежда Павлова</h5>
+                    <p class="card-text">Очень довольна сделанной подставкой! Эта вещица поднимает настроение, сделана
+                      очень качественно! Также хочется отметить общение с изготовителями, очень внимательное отношение к
+                      пожеланиям заказчика. Большое Вам Спасибо!!!</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-body">
+                    <img src="img/rew16.jpg" alt="review" class="review-img">
+                    <h5 class="card-title">Наталья Дорохова</h5>
+                    <p class="card-text">Получили сегодня нашу подставку, супер👍👍👍👍👍так как с появлением котика
+                      😸встал вопрос, где его кормить, что б пес не ел кошачью еду? Целый год Лил ел на стуле, а тут я
+                      наткнулась на красивые подставки и спросила у мастера, можно ли нам придумать не обычную
+                      подставку? И нам все придумали ,сделали, спустя меньше месяца со дня обращения мы получили вот
+                      такую красоту🐾🤗😸🐶спасибо огромное за индивидуальный подход, за постоянный контакт по ходу
+                      работ, получилось очень качественно, красиво, удобно 👍👍👍👍👍</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-body">
+                    <img src="img/rew17.jpg" alt="review" class="review-img">
+                    <h5 class="card-title">Светлана Швидкая</h5>
+                    <p class="card-text">Сегодня получили подставку) переживали, что наша самая маленькая будет
+                      привередничать, но она первая опробовала и заценила новинку. Качество очень порадовало, все так
+                      аккуратно и профессионально сделано, запаха краски нет. Наконец-то на кухне будет порядок!
+                      Спасибо, ребята! Желаем вам побольше заказчиков , интересных идей и задумок !</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <img src="img/rew18.jpg" alt="review" class="review-img">
+                    <h5 class="card-title">Ольга Вальтер</h5>
+                    <p class="card-text">Огромное спасибо за такую качественную подставочку-кухню для питомца! Нам с
+                      котиком очень нравится! А белый перламутровый цвет дерева нашей подставки вживую выглядит очень
+                      необычно и стильно. И главное, что для трапезы котяре не нужно наклоняться головой вниз, что
+                      удобно и полезно для котиков)</p>
+                  </div>
+                </div>
+
               </div>
             </div>
-            <div class="swiper-slide" id="5">Slide 5</div>
+            <div class="swiper-slide" id="5">
+              <div class="ordercard">
+                <div class="ordercard__title">
+                  Карта заказов
+                </div>
+                <div class="ordercard__text">
+                  В этом разеделе вы можете ознакомиться в какой город была отправлена наша работа и примерная стоимость
+                  ее доставки.
+                </div>
+                <div id="map"></div>
+              </div>
+            </div>
             <div class="swiper-slide contacts" id="6">
-              <h3 class="contacts__title">Контакты</h3>
-              <div class="map">
-                <script type="text/javascript" charset="utf-8" async
-                  src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afa47075deb37a9cb9fc5df237b87ade7717e60d3a4b7d949e1fcdf89b5ceca83&amp;lang=ru_RU&amp;scroll=false">
-                </script>
+              <h3 class="contacts__title">Инфо</h3>
+              <div class="contacts__main">
+                <img src="img/contacts2.png" alt="" class="contacts__images">
+
+                <div class="contacts__text">
+                  <div class="contacts__text-group">
+                    <strong class="contacts__text-title">Наш адрес:</strong>
+                    <span class="contacts__text-main">Россия,</span>
+                    <span class="contacts__text-main">Город Санкт-Петербург,</span>
+                    <span class="contacts__text-main">Улица Белышева,</span>
+                    <span class="contacts__text-main">+7(911)-983-31-12</span>
+                  </div>
+                  <div class="contacts__text-group">
+                    <div class="work__day">
+                      <strong class="contacts__text-title">Рабочие дни:</strong>
+                      <span class="contacts__text-main">Понедельник-Пятница (09:00-18:00)</span>
+                    </div>
+                    <div class="wekeend">
+                      <strong class="contacts__text-title">Выходные:</strong>
+                      <span class="contacts__text-main">Суббота-Воскресенье </span>
+                    </div>
+                  </div>
+                  <div class="contacts__text-group">
+                    <strong class="contacts__text-title">Доставка:</strong>
+                    <span class="contacts__text-main">Любой транспортной компанией на Ваш выбор</span>
+                  </div>
+                  <div class="contacts__text-group">
+                    <strong class="contacts__text-title">Срок работы:</strong>
+                    <span class="contacts__text-main">до 14 рабочих дней</span>
+                  </div>
+                </div>
+
               </div>
-              <div class="contacts__text">
-                <strong>Адрес:</strong>
-                <span>193313, Россия, Санкт-Петербург, Невский район</span>
-                <strong>Часы работы:</strong>
-                <span> 10:00-18:00</span>
-                <strong>Телефон:</strong>
-                <span><a href="tel:+79119833112">8(911)983-31-12</a></span>
-              </div>
+
             </div>
             <div class="swiper-slide toorder" style="  padding: 2rem
             " id="7">
               <div class="toorder__info wow fadeInLeft" data-wow-delay="0.4s">
                 Здесь Вы можете оставить свою заявку, указав свои данные и пожелание. После мы с вами свяжемся для
-                уточнения всех ньансов.
+                уточнения всех ньюансов.
               </div>
               <form action="sendToorder.php" method="POST" class="form toorder__form">
                 <div class="input-group toorder__input-group">

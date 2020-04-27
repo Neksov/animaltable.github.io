@@ -5,6 +5,10 @@
   &__first
     display: flex
     margin: 1rem
+#menu
+  &__toggle   
+    visibility: hidden
+
 .menu
   flex-basis: 20%
   //background: url(../img/fonemenu2.jpg) no-repeat center/cover
@@ -12,6 +16,8 @@
   margin-right: 5rem
   box-shadow: 0 0 100px rgba(1, 1, 1, 1)
   background: rgba(192, 192, 192, 0.4)
+
+
   &__logo-img
     max-width: 180px
     max-height: 180px
@@ -29,6 +35,7 @@
   margin-top: 10px
   font-size: 20px
   font-weight: 700
+  padding: 1rem
   a
     display: contents
     text-decoration: none
@@ -37,6 +44,7 @@
 .nav
   position: relative
   margin-left: -2rem
+  z-index: 2
   &__item
     position: relative
     font-size: 1.5rem
@@ -56,6 +64,7 @@
     display: flex
     transition: 1s
     z-index: 0
+    text-transform: uppercase
   a:hover
     color: #ffff
   a:before 
@@ -80,28 +89,28 @@
   @keyframes hover-v 
     0% 
       transform: scaleX(0)
-      height: 5px
+      height: 10px
     45%  
       transform: scaleX(1)
-      height: 5px
+      height: 10px
     55% 
-      height: 5px
+      height: 10px
     100% 
       transform: scaleX(1)
-      height: 55px
+      height: 75px
   @keyframes no-hover-v 
     0% 
       transform: scaleX(1)
-      height: 55px
+      height: 75px
     45% 
-      height: 5px
+      height: 10px
     55% 
       transform: scaleX(1)
-      height: 5px
+      height: 10px
       opacity: 1
     100% 
       transform: scaleX(0)
-      height: 5px
+      height: 10px
       opacity: .02
 .social
   height: 50px
@@ -136,6 +145,7 @@
   flex-basis: 80%
   min-height: 85vh
   box-shadow: 0 0 100px rgba(1, 1, 1, 1)
+  z-index: 1
 .swiper-slide
   text-align: center
   font-size: 18px
@@ -144,7 +154,7 @@
   justify-content: center
   align-items: center
   background: rgba(192, 192, 192, 0.4)
-  height: 47rem
+  height: 50rem
   &-sl
     overflow-y: scroll
 
