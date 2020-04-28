@@ -47,7 +47,7 @@
   .tabs ul li 
     padding: 10px 45px
   .nav a 
-    padding: 20px 10px
+    padding: 20px 0px
   .contacts
     &__images 
       max-width: 30rem
@@ -84,7 +84,7 @@
   .tabs ul li 
     padding: 10px 28px
   .nav a 
-    padding: 30px 10px
+    padding: 30px 0px
   .nav__item
     font-size: 1rem
   .contacts
@@ -120,7 +120,7 @@
   .tabs ul li 
     padding: 10px 25px
   .nav a 
-    padding: 30px 10px
+    padding: 30px 0px
   .nav__item
     font-size: 1rem
   .contacts
@@ -160,8 +160,6 @@
   #menu
     &__toggle 
       opacity: 0
-      
-
   #menu__toggle:checked ~ .menu__btn > span 
     transform: rotate(45deg)
   #menu__toggle:checked ~ .menu__btn > span::before 
@@ -170,10 +168,13 @@
   #menu__toggle:checked ~ .menu__btn > span::after 
     top: 0
     transform: rotate(90deg)
+
+
   #menu__toggle:checked ~ .menu__nav 
     visibility: visible
     left: 0
-    
+    overflow: scroll
+
   .menu__btn 
     display: flex
     align-items: center
@@ -189,7 +190,7 @@
     display: block
     position: absolute
     width: 100%
-    height: 2px
+    height: 4px
     background-color: #000000
     transition-duration: .25s
 
@@ -200,20 +201,29 @@
   .menu__btn > span::after 
     content: ''
     top: 8px
+
+  .menu__btn2 
+    position: fixed
+    right: 10px
+    top: 10px
+    width: 30px
+    height: 30px
+    cursor: pointer
+    z-index: 1
+    background: url(../img/close.svg) no-repeat
   .nav 
     display: block
     position: fixed
     visibility: hidden
     top: 0
     left: -100%
-    width: 400px
+    width: 100%
     height: 100%
     margin: 0
-    padding: 80px 0
     list-style: none
     background: #ECEFF1 url(../img/fonemenu.jpg) no-repeat center
     transition-duration: .25s
-    
+   
   .nav__item
     display: block
     padding: 12px 24px
@@ -222,11 +232,12 @@
     text-decoration: none
     transition-duration: .25s
     font-size: 2rem
-
   .main
     &__first
       display: block
-      padding: 2rem
+      margin: 0
+      margin-top: 1rem
+      margin-bottom: 1rem
   .menu
     margin-right: 0
     margin-bottom: 2rem
@@ -241,8 +252,6 @@
       &-img
         max-width: 100px
         margin: 1rem
-
-
   .swiper-container 
     flex-basis: 100%
     min-height: 75vh
@@ -255,7 +264,7 @@
   .tabs ul li 
     padding: 10px 25px
   .nav a 
-    padding: 30px 10px
+    padding: 30px 0px
   .contacts
     &__images 
       max-width: 30rem
@@ -293,8 +302,6 @@
   #menu
     &__toggle 
       opacity: 0
-      
-
   #menu__toggle:checked ~ .menu__btn > span 
     transform: rotate(45deg)
   #menu__toggle:checked ~ .menu__btn > span::before 
@@ -303,15 +310,26 @@
   #menu__toggle:checked ~ .menu__btn > span::after 
     top: 0
     transform: rotate(90deg)
+
   #menu__toggle:checked ~ .menu__nav 
     visibility: visible
     left: 0
-    
+    overflow: scroll
+  .menu__btn2 
+    position: fixed
+    right: 10px
+    top: 10px
+    width: 30px
+    height: 30px
+    cursor: pointer
+    z-index: 1
+    background: url(../img/close.svg) no-repeat
+
   .menu__btn 
     display: flex
     align-items: center
     position: absolute
-    right: 130px
+    right: 80px
     width: 26px
     height: 26px
     cursor: pointer
@@ -322,9 +340,9 @@
     display: block
     position: absolute
     width: 100%
-    height: 2px
+    height: 4px
     background-color: #000000
-    transition-duration: .25s
+    transition-duration: 0.25s
 
   .menu__btn > span::before 
     content: ''
@@ -339,10 +357,9 @@
     visibility: hidden
     top: 0
     left: -100%
-    width: 400px
+    width: 100%
     height: 100%
     margin: 0
-    padding: 80px 0
     list-style: none
     background: #ECEFF1 url(../img/fonemenu.jpg) no-repeat center
     transition-duration: .25s
@@ -359,7 +376,9 @@
   .main
     &__first
       display: block
-      padding: 2rem
+      margin: 0
+      margin-top: 1rem
+      margin-bottom: 1rem
   .menu
     margin-right: 0
     margin-bottom: 2rem
@@ -370,9 +389,9 @@
     &__logo
       display: contents
       align-items: center
-      font-size: 25px
+      font-size: 19px
       &-img
-        max-width: 100px
+        max-width: 90px
         margin: 1rem
 
 
@@ -386,9 +405,9 @@
     &__form
       margin-top: 1rem
   .tabs ul li 
-    padding: 10px 25px
+    padding: 10px 15px
   .nav a 
-    padding: 30px 10px
+    padding: 30px 0px
   .contacts
     &__images 
       max-width: 30rem
@@ -415,7 +434,7 @@
     &__btn 
       font-size: 20px
   .social
-    display: none
+    margin-left: 2rem
     a
       padding-right: 10px
     &-img1 
@@ -433,3 +452,516 @@
   .ordercard
     &__text 
       line-height: 1.5rem
+@media  screen and (min-width : 480px) and (max-width : 599px)
+  #menu
+    &__toggle 
+      opacity: 0
+  #menu__toggle:checked ~ .menu__btn > span 
+    transform: rotate(45deg)
+  #menu__toggle:checked ~ .menu__btn > span::before 
+    top: 0
+    transform: rotate(0)
+  #menu__toggle:checked ~ .menu__btn > span::after 
+    top: 0
+    transform: rotate(90deg)
+
+  #menu__toggle:checked ~ .menu__nav 
+    visibility: visible
+    left: 0
+    overflow: scroll
+  .menu__btn2 
+    position: fixed
+    right: 10px
+    top: 10px
+    width: 30px
+    height: 30px
+    cursor: pointer
+    z-index: 1
+    background: url(../img/close.svg) no-repeat
+
+  .menu__btn 
+    display: flex
+    align-items: center
+    position: absolute
+    right: 80px
+    width: 26px
+    height: 26px
+    cursor: pointer
+    z-index: 1
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after 
+    display: block
+    position: absolute
+    width: 100%
+    height: 4px
+    background-color: #000000
+    transition-duration: 0.25s
+
+  .menu__btn > span::before 
+    content: ''
+    top: -8px
+
+  .menu__btn > span::after 
+    content: ''
+    top: 8px
+  .nav 
+    display: block
+    position: fixed
+    visibility: hidden
+    top: 0
+    left: -100%
+    width: 100%
+    height: 100%
+    margin: 0
+    list-style: none
+    background: #ECEFF1 url(../img/fonemenu.jpg) no-repeat center
+    transition-duration: .25s
+    
+  .nav__item
+    display: block
+    padding: 12px 24px
+    color: #000000
+    font-weight: 600
+    text-decoration: none
+    transition-duration: .25s
+    font-size: 2rem
+
+  .main
+    &__first
+      display: block
+      margin: 0
+      margin-top: 1rem
+      margin-bottom: 1rem
+  .menu
+    margin-right: 0
+    margin-bottom: 2rem
+    min-height: 110px
+    display: flex
+    align-items: center
+    height: 0
+    &__logo
+      display: contents
+      align-items: center
+      font-size: 14px
+      &-img
+        max-width: 60px
+        margin: 1rem
+
+
+  .swiper-container 
+    flex-basis: 100%
+    min-height: 75vh
+
+    
+  .tabs ul li 
+    padding: 10px 1px
+  .nav a 
+    padding: 30px 0px
+  .contacts
+    &__images 
+      max-width: 30rem
+      min-height: 20rem
+  .toorder
+    &__info 
+      font-size: 25px
+  .first
+    flex-wrap: wrap
+    &-img 
+      max-width: 250px
+      max-height: 250px
+    &__title
+      margin-top: 1rem
+    &__btn
+      font-size: 22px
+    &__text
+      font-size: 20px
+  .toorder
+    &__social
+      display: none
+    &__form 
+      min-width: 23rem
+    &__btn 
+      font-size: 20px
+    &__form
+      margin-top: 0rem
+  .social
+    margin-left: 1rem
+    a
+      padding-right: 10px
+    &-img1 
+      width: 20px
+      height: 20px
+    &-img2 
+      width: 23px
+      height: 23px
+    &-img3 
+      width: 23px
+      height: 23px
+    &-img 
+      width: 20px
+      height: 20px
+  .ordercard
+    &__text 
+      line-height: 1.5rem
+@media  screen and (min-width : 412px) and (max-width : 479px)
+  #menu
+    &__toggle 
+      opacity: 0
+  #menu__toggle:checked ~ .menu__btn > span 
+    transform: rotate(45deg)
+  #menu__toggle:checked ~ .menu__btn > span::before 
+    top: 0
+    transform: rotate(0)
+  #menu__toggle:checked ~ .menu__btn > span::after 
+    top: 0
+    transform: rotate(90deg)
+
+  #menu__toggle:checked ~ .menu__nav 
+    visibility: visible
+    left: 0
+    overflow: scroll
+  .menu__btn2 
+    position: fixed
+    right: 10px
+    top: 10px
+    width: 30px
+    height: 30px
+    cursor: pointer
+    z-index: 1
+    background: url(../img/close.svg) no-repeat
+
+  .menu__btn 
+    display: flex
+    align-items: center
+    position: absolute
+    right: 50px
+    width: 26px
+    height: 26px
+    cursor: pointer
+    z-index: 1
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after 
+    display: block
+    position: absolute
+    width: 100%
+    height: 4px
+    background-color: #000000
+    transition-duration: 0.25s
+
+  .menu__btn > span::before 
+    content: ''
+    top: -8px
+
+  .menu__btn > span::after 
+    content: ''
+    top: 8px
+  .nav 
+    display: block
+    position: fixed
+    visibility: hidden
+    top: 0
+    left: -100%
+    width: 100%
+    height: 100%
+    margin: 0
+    list-style: none
+    background: #ECEFF1 url(../img/fonemenu.jpg) no-repeat center
+    transition-duration: .25s
+    
+  .nav__item
+    display: block
+    padding: 12px 24px
+    color: #000000
+    font-weight: 600
+    text-decoration: none
+    transition-duration: .25s
+    font-size: 2rem
+
+  .main
+    &__first
+      display: block
+      margin: 0
+      margin-top: 1rem
+      margin-bottom: 1rem
+  .menu
+    margin-right: 0
+    margin-bottom: 2rem
+    min-height: 110px
+    display: flex
+    align-items: center
+    height: 0
+    padding: 1rem
+    &__logo
+      display: contents
+      align-items: center
+      font-size: 20px
+      background: #df2525
+      &-img
+        display: none
+        max-width: 60px
+        margin: 1rem
+
+
+  .swiper-container 
+    flex-basis: 100%
+    min-height: 75vh
+  .tabs ul li 
+    padding: 10px 10px
+  .nav a 
+    padding: 30px 0px
+  .contacts
+    &__images 
+      max-width: 25rem
+      min-height: 17rem
+  .first
+    flex-wrap: wrap
+    &-img 
+      max-width: 200px
+      max-height: 200px
+    &__title
+      margin-top: 1rem
+      font-size: 30px
+      padding: 1rem 2rem
+    &__btn
+      font-size: 22px
+      padding: 1rem 3rem
+    &__text
+      font-size: 20px
+  .toorder
+    &__social
+      display: none
+    &__form 
+      min-width: 19rem
+    &__btn 
+      font-size: 18px
+      padding: 0.85rem 3rem
+    &__form
+      margin-top: 0rem
+    &__info 
+      font-size: 20px
+      line-height: 2rem
+  .social
+    margin-left: 1rem
+    a
+      padding-right: 10px
+    &-img1 
+      width: 20px
+      height: 20px
+    &-img2 
+      width: 23px
+      height: 23px
+    &-img3 
+      width: 23px
+      height: 23px
+    &-img 
+      width: 20px
+      height: 20px
+  .ordercard
+    &__text 
+      line-height: 1.5rem
+  .card
+    &__animal
+      &-btn 
+        padding: 1rem 2rem
+    &__backinfo
+      &-images 
+        max-width: 16rem
+        max-height: 14rem
+@media  screen and (min-width : 320px) and (max-width : 411px)
+  #menu
+    &__toggle 
+      opacity: 0
+  #menu__toggle:checked ~ .menu__btn > span 
+    transform: rotate(45deg)
+  #menu__toggle:checked ~ .menu__btn > span::before 
+    top: 0
+    transform: rotate(0)
+  #menu__toggle:checked ~ .menu__btn > span::after 
+    top: 0
+    transform: rotate(90deg)
+
+  #menu__toggle:checked ~ .menu__nav 
+    visibility: visible
+    left: 0
+    overflow: scroll
+  .menu__btn2 
+    position: fixed
+    right: 10px
+    top: 10px
+    width: 30px
+    height: 30px
+    cursor: pointer
+    z-index: 1
+    background: url(../img/close.svg) no-repeat
+
+  .menu__btn 
+    display: flex
+    align-items: center
+    position: absolute
+    right: 30px
+    width: 26px
+    height: 26px
+    cursor: pointer
+    z-index: 1
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after 
+    display: block
+    position: absolute
+    width: 100%
+    height: 4px
+    background-color: #000000
+    transition-duration: 0.25s
+
+  .menu__btn > span::before 
+    content: ''
+    top: -8px
+
+  .menu__btn > span::after 
+    content: ''
+    top: 8px
+  .nav 
+    display: block
+    position: fixed
+    visibility: hidden
+    top: 0
+    left: -100%
+    width: 100%
+    height: 100%
+    margin: 0
+    list-style: none
+    background: #ECEFF1 url(../img/fonemenu.jpg) no-repeat center
+    transition-duration: .25s
+    
+  .nav__item
+    display: block
+    padding: 12px 24px
+    color: #000000
+    font-weight: 600
+    text-decoration: none
+    transition-duration: .25s
+    font-size: 1rem
+
+  .main
+    &__first
+      display: block
+      margin: 0
+      margin-top: 1rem
+      margin-bottom: 1rem
+  .menu
+    margin-right: 0
+    margin-bottom: 2rem
+    min-height: 110px
+    display: flex
+    align-items: center
+    height: 0
+    padding: 1rem
+    &__logo
+      display: contents
+      align-items: center
+      font-size: 15px
+      background: #df2525
+      &-img
+        display: none
+        max-width: 60px
+        margin: 1rem
+
+
+  .swiper-container 
+    flex-basis: 100%
+    min-height: 75vh
+  .tabs ul li 
+    padding: 10px 10px
+  .nav a 
+    padding: 30px 0px
+  .contacts
+    &__images 
+      max-width: 20rem
+      min-height: 14rem
+  .first
+    flex-wrap: wrap
+    &-img 
+      max-width: 150px
+      max-height: 150px
+    &__title
+      margin-top: 1rem
+      font-size: 30px
+      padding: 1rem 2rem
+    &__btn
+      font-size: 19px
+      padding: 1rem 3rem
+    &__text
+      font-size: 20px
+      padding: 0px
+      padding-top: 2rem
+      padding-bottom: 2rem
+  .toorder
+    &__social
+      display: none
+    &__form 
+      min-width: 15rem
+      height: 33rem
+      margin-top: 0rem
+    &__btn 
+      font-size: 18px
+      padding: 0.85rem 3rem
+    &__info 
+      font-size: 20px
+      line-height: 2rem
+    &__input 
+      font-size: 11px
+  .social
+    margin-left: 1rem
+    a
+      padding-right: 10px
+    &-img1 
+      width: 15px
+      height: 15px
+    &-img2 
+      width: 18px
+      height: 18px
+    &-img3 
+      width: 18px
+      height: 18px
+    &-img 
+      width: 15px
+      height: 15px
+  .ordercard
+    padding: 0
+    &__text 
+      line-height: 1.5rem
+      font-size: 20px
+      padding: 1rem
+    &__title 
+      font-size: 30px
+  .card
+    &__animal
+      &-btn 
+        padding: 0.5rem 1.3rem
+        font-size: 22px
+    &__backinfo
+      &-images 
+        max-width: 11rem
+        max-height: 14rem
+      &-price 
+        font-size: 25px
+  .about
+    &__text 
+      line-height: 2rem
+  .review
+    &__title 
+      font-size: 30px
+  .work
+    &__title 
+      font-size: 30px
+  .about
+    &__title 
+      font-size: 30px
+  #map 
+    margin: 1rem
+ 
+  .ymaps-2-1-76-map
+    width: 208px
+    height: 550px

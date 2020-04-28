@@ -105,8 +105,8 @@ $(document).ready(function () {
     submitHandler: function (form) {
       $.ajax({
         type: "POST",
-        url: "sendPrice.php",
-        data: $(".price__form").serialize(), //Преобразует данные формы в строку, пригодную для использования в URL
+        url: "sendToorder.php",
+        data: $(".toorder__form").serialize(), //Преобразует данные формы в строку, пригодную для использования в URL
         success: function (response) {
           //modal.on('.modalSend');
           $(form)[0].reset(); // чистит поля после отправки формы
@@ -163,20 +163,19 @@ $(document).ready(function () {
     placeholder: "Ваш номер телефона:",
   });
   new WOW().init();
-});
 
-//data-src
-[].forEach.call(document.querySelectorAll("img[data-src]"), function (img) {
-  img.setAttribute("src", img.getAttribute("data-src"));
-  img.onload = function () {
-    img.removeAttribute("data-src");
-  };
+  //data-src
+  [].forEach.call(document.querySelectorAll("img[data-src]"), function (img) {
+    img.setAttribute("src", img.getAttribute("data-src"));
+    img.onload = function () {
+      img.removeAttribute("data-src");
+    };
+  });
 });
-
 // Функция ymaps.ready() будет вызвана, когда
 // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
 ymaps.ready(init);
-var myMap, myPlacemark1, myPlacemark2;
+var myMap, myPlacemark1, myPlacemark2, myPlacemark3, myPlacemark4, myPlacemark5, myPlacemark6, myPlacemark7, myPlacemark8, myPlacemark9, myPlacemark10, myPlacemark11, myPlacemark12, myPlacemark13, myPlacemark14, myPlacemark15, myPlacemark16, myPlacemark17, myPlacemark18, myPlacemark19, myPlacemark20, myPlacemark21, myPlacemark22, myPlacemark23, myPlacemark24, myPlacemark25, myPlacemark26, myPlacemark27, myPlacemark28, myPlacemark29, myPlacemark30, myPlacemark31, myPlacemark32, myPlacemark33, myPlacemark34, myPlacemark35, myPlacemark36, myPlacemark37, myPlacemark38;
 
 function init() {
   // Создание карты.
