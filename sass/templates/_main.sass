@@ -5,10 +5,8 @@
   &__first
     display: flex
     margin: 1rem
-#menu
-  &__toggle   
-    visibility: hidden
-
+.menu__checkbox
+  display: none
 .menu
   flex-basis: 20%
   //background: url(../img/fonemenu2.jpg) no-repeat center/cover
@@ -35,7 +33,7 @@
   margin-top: 10px
   font-size: 20px
   font-weight: 700
-  padding: 1rem
+  padding: 2rem
   a
     display: contents
     text-decoration: none
@@ -43,7 +41,6 @@
 
 .nav
   position: relative
-  margin-left: -2rem
   z-index: 2
   &__item
     position: relative
@@ -58,7 +55,7 @@
   a
     text-decoration: none!important
     letter-spacing: 0.5px
-    padding: 20px 3px
+    padding: 24px 3px
     color: #000000
     align-items: center
     display: flex
@@ -143,21 +140,19 @@
       border-radius: 50px
 .swiper-container
   flex-basis: 80%
-  min-height: 85vh
+  height: 900px
   box-shadow: 0 0 100px rgba(1, 1, 1, 1)
   z-index: 1
 .swiper-slide
+  position: relative
   text-align: center
   font-size: 18px
-  min-height: 100%
   display: flex
   justify-content: center
   align-items: center
   background: rgba(192, 192, 192, 0.4)
-  height: 50rem
-  &-sl
-    overflow-y: scroll
-
+  min-height: 85vh
+  transition-timing-function: linear
 .cards
   display: flex
   flex-wrap: wrap

@@ -37,6 +37,7 @@
     "imagemin-pngquant": "^8.0.0"
   },
   "dependencies": {
-    "browser-sync": "^2.26.7"
+    "browser-sync": "^2.26.7",
+    "lightbox2": "^2.11.1"
   }
 }
