@@ -184,26 +184,25 @@ lightbox.option({
   fitImagesInViewport: true,
 });
 
-function burgermenu(selector) {
-  let menu2 = $(selector);
-  let button = menu2.find('.menu__button');
-  let links = menu2.find('.nav__item');
-
-  button.on('click', (e) => {
-    e.preventDefault();
-    toggleMenu();
+//бургер меню
+//открытие и закртиые бургер меню
+$(document).ready(function () {
+  $(".burger").click(function (event) {
+    $(".burger, .nav").toggleClass("active");
+  });
+  $(".nav").click(function (event) {
+    $(".burger, .nav").removeClass("active");
   });
 
-  links.on('click', () => toggleMenu());
+  $(".burger-our").click(function (event) {
+    $(".burger-our, .nav-our").toggleClass("active-our");
+  });
+  $(".nav-our").click(function (event) {
+    $(".burger-our, .nav-our").removeClass("active-our");
+  });
+});
 
-  function toggleMenu() {
-    menu2.toggleClass('nav-active');
-
-    if (menu2.hasClass('nav-active')) {
-      $('body').css('overflow', 'hidden');
-    } else {
-      $('body').css('overflow', 'visible');
-    };
-  };
-};
-burgermenu('.nav');
+//переход по ссылке
+function toorder() {
+  location.href = '#7';
+}
