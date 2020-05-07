@@ -2,7 +2,7 @@
 
 $userName = $_POST['userName'];
 $userEmail = $_POST['userEmail'];
-$userWebSayt = $_POST['userPhone'];
+$userPhone = $_POST['userPhone'];
 $userMessage = $_POST['userMessage'];
 
 

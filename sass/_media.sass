@@ -1,4 +1,9 @@
-@media  screen and (min-width : 1600px) and (max-width : 1750px)
+@media  screen and (min-width : 1750px) and (max-width : 11920px)
+  #button-up
+    display: none
+@media  screen and (min-width : 1600px) and (max-width : 1749px)
+  #button-up
+    display: none
   .menu__checkbox
     display: none
   .menu 
@@ -6,18 +11,20 @@
   .toorder
     &__social
       margin-right: 8rem
-      margin-top: 4rem
+      margin-top: 8.6rem
   #map
     width: 1000px
 @media  screen and (min-width : 1439px) and (max-width : 1599px)
+  #button-up
+    display: none
   .menu__checkbox
     display: none
   .menu 
     flex-basis: 26%
   .toorder
     &__social
-      margin-right: 2rem
-      margin-top: 3rem
+      margin-right: 3rem
+      margin-top: 8rem
     &__form
       margin-top: 1rem
   .tabs ul li 
@@ -25,6 +32,8 @@
   #map
     width: 900px
 @media  screen and (min-width : 1360px) and (max-width : 1438px)
+  #button-up
+    display: none
   .menu__checkbox
     display: none
   .menu
@@ -32,7 +41,7 @@
   .toorder
     &__social
       margin-right: 2rem
-      margin-top: 3.2rem
+      margin-top: 7.8rem
     &__form
       margin-top: 1rem
   .tabs ul li 
@@ -49,6 +58,8 @@
   #map
     width: 800px
 @media  screen and (min-width : 1200px) and (max-width : 1359px)
+  #button-up
+    display: none
   .menu__checkbox
     display: none
   .menu
@@ -56,7 +67,7 @@
   .toorder
     &__social
       margin-right: 0.5rem
-      margin-top: 4rem
+      margin-top: 8rem
     &__form
       margin-top: 1rem
   .tabs ul li 
@@ -87,6 +98,8 @@
   #map
     width: 700px
 @media  screen and (min-width : 1024px) and (max-width : 1199px)
+  #button-up
+    display: none
   .menu__checkbox
     display: none
   .menu
@@ -98,7 +111,7 @@
   .toorder
     &__social
       margin-right: 0.5rem
-      margin-top: 4rem
+      margin-top: 7rem
     &__form
       margin-top: 1rem
   .tabs ul li 
@@ -132,6 +145,8 @@
   #map
     width: 600px
 @media  screen and (min-width : 992px) and (max-width : 1023px)
+  #button-up
+    display: none
   .menu
     flex-basis: 25%
     &__logo
@@ -141,7 +156,7 @@
   .toorder
     &__social
       margin-right: 0.5rem
-      margin-top: 4rem
+      margin-top: 7rem
     &__form
       margin-top: 1rem
   .tabs ul li 
@@ -198,7 +213,9 @@
     position: absolute
     width: 40px
     height: 20px
-    right: 50px
+    right: 35px
+    top: 70px
+
     &:after, &:before
       content: ' '
       background-color: #000
@@ -237,13 +254,12 @@
   .nav
     background: url(../img/fone.jpg) no-repeat center/cover
     position: absolute
-    -webkit-transition: all 1.3s ease 0s
-    transition: all 1.3s ease 0s
+    transition: all 2.3s ease 0s
     width: 100%
     top: 0
-    top: -120%
+    top: -350%
     left: 0
-    height: 120%
+    height: 500px
     display: flex
     justify-content: center
     overflow: auto
@@ -289,19 +305,19 @@
   .toorder
     &__social
       margin-right: 0.5rem
-      margin-top: 4rem
+      margin-top: 7rem
+      padding: 0
     &__form
       margin-top: 1rem
+    &__info 
+      font-size: 25px
   .tabs ul li 
     padding: 10px 25px
 
   .contacts
     &__images 
       max-width: 30rem
-      min-height: 20rem
-  .toorder
-    &__info 
-      font-size: 25px
+      min-height: 20rem    
   .first
     flex-wrap: wrap
     &-img 
@@ -309,11 +325,6 @@
       max-height: 250px
     &__title
       margin-top: 1rem
-  .toorder
-    &__social
-      margin-right: 5.5rem
-      margin-top: 2rem
-      padding: 0
   .social
     margin: auto
     a
@@ -340,7 +351,8 @@
     position: absolute
     width: 40px
     height: 20px
-    right: 50px
+    right: 35px
+    top: 65px
     &:after, &:before
       content: ' '
       background-color: #000
@@ -379,13 +391,12 @@
   .nav
     background: url(../img/fone.jpg) no-repeat center/cover
     position: absolute
-    -webkit-transition: all 1.3s ease 0s
-    transition: all 1.3s ease 0s
+    transition: all 2.3s ease 0s
     width: 100%
     top: 0
-    top: -140%
+    top: -350%
     left: 0
-    height: 500px
+    height: 600px
     display: flex
     justify-content: center
     ul
@@ -446,8 +457,8 @@
       font-size: 20px
   .toorder
     &__social
-      margin-right: 2.5rem
-      margin-top: 4rem
+      margin-right: 6.5rem
+      margin-top: 5.8rem
       &-title
         display: none
       &-text
@@ -479,19 +490,27 @@
   .ordercard
     &__text 
       line-height: 1.5rem
-  .modalSend
-    padding: 2rem
   #map
     width: 550px
     img
       width: 200px
+  .card
+    &__animal
+      max-width: 15rem
+      &-btn
+        padding: 1rem 2rem
+    &__backinfo
+      &-images  
+        max-width: 15rem
 @media  screen and (min-width : 480px) and (max-width : 599px)
   .burger
     display: block
     position: absolute
     width: 40px
     height: 20px
-    right: 50px
+    right: 35px
+    top: 60px
+    margin: 0
     &:after, &:before
       content: ' '
       background-color: #000
@@ -530,13 +549,12 @@
   .nav
     background: url(../img/fone.jpg) no-repeat center/cover
     position: absolute
-    -webkit-transition: all 1.3s ease 0s
-    transition: all 1.3s ease 0s
+    transition: all 2.3s ease 0s
     width: 100%
     top: 0
-    top: -120%
+    top: -350%
     left: 0
-    height: 120%
+    height: 700px
     display: flex
     justify-content: center
     ul
@@ -631,19 +649,27 @@
   .ordercard
     &__text 
       line-height: 1.5rem
-  .modalSend
-    padding: 2rem 2rem
   #map
     width: 420px
     img
       width: 200px
+  .card
+    &__animal
+      max-width: 12rem
+      &-btn
+        padding: 0.35rem 0.5rem
+    &__backinfo
+      &-images  
+        max-width: 12rem
 @media  screen and (min-width : 412px) and (max-width : 479px)
   .burger
     display: block
     position: absolute
     width: 40px
     height: 20px
-    right: 50px
+    right: 35px
+    top: 60px
+
     &:after, &:before
       content: ' '
       background-color: #000
@@ -682,13 +708,12 @@
   .nav
     background: url(../img/fone.jpg) no-repeat center/cover
     position: absolute
-    -webkit-transition: all 1.3s ease 0s
-    transition: all 1.3s ease 0s
+    transition: all 2.3s ease 0s
     width: 100%
     top: 0
-    top: -120%
+    top: -350%
     left: 0
-    height: 500px
+    height: 700px
     display: flex
     justify-content: center
     ul
@@ -795,8 +820,6 @@
       &-images 
         max-width: 16rem
         max-height: 14rem
-  .modalSend
-    padding: 2rem 2rem
   #map
     width: 350px
     img
@@ -807,7 +830,9 @@
     position: absolute
     width: 40px
     height: 20px
-    right: 50px
+    right: 35px
+    top: 60px
+
     &:after, &:before
       content: ' '
       background-color: #000
@@ -846,19 +871,18 @@
   .nav
     background: url(../img/fone.jpg) no-repeat center/cover
     position: absolute
-    -webkit-transition: all 1.3s ease 0s
-    transition: all 1.3s ease 0s
+    transition: all 2.3s ease 0s
     width: 100%
     top: 0
-    top: -120%
+    top: -350%
     left: 0
-    height: 600px
+    height: 500px
     display: flex
     justify-content: center
     ul
       background: rgba(192, 192, 192, 0.4)
       width: 18rem  
-      height: 25rem
+      height: 27rem
       border-radius: 5px
     a
       padding: 15px
@@ -991,8 +1015,27 @@
     width: 208px
     height: 550px
   .modalSend
-    padding: 2rem 2rem
+    width: 18rem
+
   #map
     width: 280px
     img
       width: 150px
+
+@media only screen and (max-width : 768px) 
+  .animated 
+    -o-transition-property: none !important
+    -moz-transition-property: none !important
+    -ms-transition-property: none !important
+    -webkit-transition-property: none !important
+    transition-property: none !important
+    -o-transform: none !important
+    -moz-transform: none !important
+    -ms-transform: none !important
+    -webkit-transform: none !important
+    transform: none !important
+    -webkit-animation: none !important
+    -moz-animation: none !important
+    -o-animation: none !important
+    -ms-animation: none !important
+    animation: none !important

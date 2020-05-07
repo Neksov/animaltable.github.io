@@ -64,159 +64,159 @@ function init() {
 
   myPlacemark1 = new ymaps.Placemark([59.49864, 30.314566], {
     balloonContentHeader: "Стоимость доставки-бесплатно",
-    balloonContentBody: '<img src="img/cat1.png" >',
+    balloonContentBody: '<img src="img/cat1.jpg" >',
   });
   myPlacemark2 = new ymaps.Placemark([59.9473088, 30.7268385], {
     balloonContentHeader: "Стоимость доставки-бесплатно",
-    balloonContentBody: '<img src="img/cat2.png" >',
+    balloonContentBody: '<img src="img/cat2.jpg" >',
   });
   myPlacemark3 = new ymaps.Placemark([59.939864, 30.314566], {
     balloonContentHeader: "Стоимость доставки-бесплатно",
-    balloonContentBody: '<img src="img/cat3.png" >',
+    balloonContentBody: '<img src="img/cat3.jpg" >',
   });
   myPlacemark4 = new ymaps.Placemark([59.939864, 30.514566], {
     balloonContentHeader: "Стоимость доставки-бесплатно",
-    balloonContentBody: '<img src="img/cat4.png" >',
+    balloonContentBody: '<img src="img/cat4.jpg" >',
   });
   myPlacemark5 = new ymaps.Placemark([62.709367, 40.285209], {
     balloonContentHeader: "Стоимость доставки-450р",
-    balloonContentBody: '<img src="img/cat5.png" >',
+    balloonContentBody: '<img src="img/cat5.jpg" >',
   });
   myPlacemark6 = new ymaps.Placemark([55.755814, 37.617635], {
     balloonContentHeader: "Стоимость доставки-400р",
-    balloonContentBody: '<img src="img/cat6.png" >',
+    balloonContentBody: '<img src="img/cat6.jpg" >',
   });
   myPlacemark7 = new ymaps.Placemark([59.755814, 30.617635], {
     balloonContentHeader: "Стоимость доставки-бесплатно",
-    balloonContentBody: '<img src="img/cat7.png" >',
+    balloonContentBody: '<img src="img/cat7.jpg" >',
   });
   myPlacemark8 = new ymaps.Placemark([59.755814, 30.667635], {
     balloonContentHeader: "Стоимость доставки-бесплатно",
-    balloonContentBody: '<img src="img/cat8.png" >',
+    balloonContentBody: '<img src="img/cat8.jpg" >',
   });
   myPlacemark9 = new ymaps.Placemark([59.755814, 30.667635], {
     balloonContentHeader: "Стоимость доставки-бесплатно",
-    balloonContentBody: '<img src="img/cat9.png" >',
+    balloonContentBody: '<img src="img/cat9.jpg" >',
   });
   myPlacemark10 = new ymaps.Placemark([59.755814, 30.689635], {
     balloonContentHeader: "Стоимость доставки-бесплатно",
-    balloonContentBody: '<img src="img/cat10.png" >',
+    balloonContentBody: '<img src="img/cat10.jpg" >',
   });
   myPlacemark11 = new ymaps.Placemark([55.755814, 37.167635], {
     balloonContentHeader: "Стоимость доставки-550р",
-    balloonContentBody: '<img src="img/cat11.png" >',
+    balloonContentBody: '<img src="img/cat11.jpg" >',
   });
   myPlacemark12 = new ymaps.Placemark([55.755814, 37.467635], {
     balloonContentHeader: "Стоимость доставки-500р",
-    balloonContentBody: '<img src="img/cat12.png" >',
+    balloonContentBody: '<img src="img/cat12.jpg" >',
   });
   myPlacemark13 = new ymaps.Placemark([59.755814, 30.660695], {
     balloonContentHeader: "Стоимость доставки-бесплатно",
-    balloonContentBody: '<img src="img/cat13.png" >',
+    balloonContentBody: '<img src="img/cat13.jpg" >',
   });
   myPlacemark14 = new ymaps.Placemark([59.755814, 30.661635], {
     balloonContentHeader: "Стоимость доставки-бесплатно",
-    balloonContentBody: '<img src="img/cat14.png" >',
+    balloonContentBody: '<img src="img/cat14.jpg" >',
   });
   myPlacemark15 = new ymaps.Placemark([59.755814, 30.662635], {
     balloonContentHeader: "Стоимость доставки-бесплатно",
-    balloonContentBody: '<img src="img/cat15.png" >',
+    balloonContentBody: '<img src="img/cat15.jpg" >',
   });
   myPlacemark16 = new ymaps.Placemark([59.755814, 30.663635], {
     balloonContentHeader: "Стоимость доставки-бесплатно",
-    balloonContentBody: '<img src="img/cat16.png" >',
+    balloonContentBody: '<img src="img/cat16.jpg" >',
   });
   myPlacemark17 = new ymaps.Placemark([59.755814, 30.664635], {
     balloonContentHeader: "Стоимость доставки-бесплатно",
-    balloonContentBody: '<img src="img/dog1.png" >',
+    balloonContentBody: '<img src="img/dog1.jpg" >',
   });
   myPlacemark18 = new ymaps.Placemark([43.585525, 39.723062], {
     balloonContentHeader: "Стоимость доставки-560р",
-    balloonContentBody: '<img src="img/dog2.png" >',
+    balloonContentBody: '<img src="img/dog2.jpg" >',
   });
   myPlacemark19 = new ymaps.Placemark([59.755814, 30.665635], {
     balloonContentHeader: "Стоимость доставки-бесплатно",
-    balloonContentBody: '<img src="img/dog3.png" >',
+    balloonContentBody: '<img src="img/dog3.jpg" >',
   });
   myPlacemark20 = new ymaps.Placemark([55.773444, 37.655329], {
     balloonContentHeader: "Стоимость доставки-630р",
-    balloonContentBody: '<img src="img/dog4.png" >',
+    balloonContentBody: '<img src="img/dog4.jpg" >',
   });
   myPlacemark21 = new ymaps.Placemark([55.776451, 37.655212], {
     balloonContentHeader: "Стоимость доставки-500р",
-    balloonContentBody: '<img src="img/dog5.png" >',
+    balloonContentBody: '<img src="img/dog5.jpg" >',
   });
   myPlacemark22 = new ymaps.Placemark([59.937585, 30.360398], {
     balloonContentHeader: "Стоимость доставки-бесплатно",
-    balloonContentBody: '<img src="img/dog6.png" >',
+    balloonContentBody: '<img src="img/dog6.jpg" >',
   });
   myPlacemark23 = new ymaps.Placemark([55.754375, 37.633587], {
     balloonContentHeader: "Стоимость доставки-500р",
-    balloonContentBody: '<img src="img/dog7.png" >',
+    balloonContentBody: '<img src="img/dog7.jpg" >',
   });
   myPlacemark24 = new ymaps.Placemark([55.753689, 37.642117], {
     balloonContentHeader: "Стоимость доставки-500р",
-    balloonContentBody: '<img src="img/dog8.png" >',
+    balloonContentBody: '<img src="img/dog8.jpg" >',
   });
   myPlacemark25 = new ymaps.Placemark([55.745073, 37.603488], {
     balloonContentHeader: "Стоимость доставки-500р",
-    balloonContentBody: '<img src="img/dog9.png" >',
+    balloonContentBody: '<img src="img/dog9.jpg" >',
   });
   myPlacemark26 = new ymaps.Placemark([55.776867, 37.59268], {
     balloonContentHeader: "Стоимость доставки-бесплатно",
-    balloonContentBody: '<img src="img/dog10.png" >',
+    balloonContentBody: '<img src="img/dog10.jpg" >',
   });
   myPlacemark27 = new ymaps.Placemark([55.674158, 37.858356], {
     balloonContentHeader: "Стоимость доставки-500р",
-    balloonContentBody: '<img src="img/dog11.png" >',
+    balloonContentBody: '<img src="img/dog11.jpg" >',
   });
   myPlacemark28 = new ymaps.Placemark([59.928876, 30.412689], {
     balloonContentHeader: "Стоимость доставки-бесплатно",
-    balloonContentBody: '<img src="img/dog12.png" >',
+    balloonContentBody: '<img src="img/dog12.jpg" >',
   });
   myPlacemark29 = new ymaps.Placemark([48.136207, 67.15355], {
     balloonContentHeader: "Стоимость доставки-700р",
-    balloonContentBody: '<img src="img/dog13.png" >',
+    balloonContentBody: '<img src="img/dog13.jpg" >',
   });
   myPlacemark30 = new ymaps.Placemark([61.6677, 40.202466], {
     balloonContentHeader: "Стоимость доставки-450р",
-    balloonContentBody: '<img src="img/dog14.png" >',
+    balloonContentBody: '<img src="img/dog14.jpg" >',
   });
   myPlacemark31 = new ymaps.Placemark([60.051284, 30.438578], {
     balloonContentHeader: "Стоимость доставки-бесплатно",
-    balloonContentBody: '<img src="img/dog15.png" >',
+    balloonContentBody: '<img src="img/dog15.jpg" >',
   });
   myPlacemark32 = new ymaps.Placemark([59.966394, 30.311502], {
     balloonContentHeader: "Стоимость доставки-бесплатно",
-    balloonContentBody: '<img src="img/dog16.png" >',
+    balloonContentBody: '<img src="img/dog16.jpg" >',
   });
   myPlacemark33 = new ymaps.Placemark([59.966394, 30.331502], {
     balloonContentHeader: "Стоимость доставки-бесплатно",
-    balloonContentBody: '<img src="img/dog17.png" >',
+    balloonContentBody: '<img src="img/dog17.jpg" >',
   });
   myPlacemark34 = new ymaps.Placemark([55.582528, 37.671153], {
     balloonContentHeader: "Стоимость доставки-бесплатно",
-    balloonContentBody: '<img src="img/dog18.png" >',
+    balloonContentBody: '<img src="img/dog18.jpg" >',
   });
   myPlacemark35 = new ymaps.Placemark([59.984916, 30.344052], {
     balloonContentHeader: "Стоимость доставки-бесплатно",
-    balloonContentBody: '<img src="img/other1.png" >',
+    balloonContentBody: '<img src="img/other1.jpg" >',
   });
   myPlacemark36 = new ymaps.Placemark([59.911935, 30.454685], {
     balloonContentHeader: "Стоимость доставки-бесплатно",
-    balloonContentBody: '<img src="img/other2.png" >',
+    balloonContentBody: '<img src="img/other2.jpg" >',
   });
   myPlacemark37 = new ymaps.Placemark([63.621324, 33.232608], {
     balloonContentHeader: "Стоимость доставки-500р",
-    balloonContentBody: '<img src="img/other3.png" >',
+    balloonContentBody: '<img src="img/other3.jpg" >',
   });
   myPlacemark38 = new ymaps.Placemark([61.656737, 40.192395], {
     balloonContentHeader: "Стоимость доставки-500р",
-    balloonContentBody: '<img src="img/other4.png" >',
+    balloonContentBody: '<img src="img/other4.jpg" >',
   });
   myPlacemark39 = new ymaps.Placemark([54.314192, 48.403123], {
     balloonContentHeader: "Стоимость доставки-676р",
-    balloonContentBody: '<img src="img/dog19.png" >',
+    balloonContentBody: '<img src="img/dog19.jpg" >',
   });
   myPin
     .add(myPlacemark1)

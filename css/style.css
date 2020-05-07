@@ -538,7 +538,8 @@ input.invalid {
 .logo a {
   display: contents;
   text-decoration: none;
-  color: black;
+  color: #000000;
+  font-family: 'Futura Demi', cursive;
 }
 
 .nav {
@@ -578,6 +579,7 @@ input.invalid {
   z-index: 0;
   text-transform: uppercase;
   font-weight: 700;
+  font-family: 'Futura Demi', cursive;
 }
 
 .nav a:hover {
@@ -802,6 +804,13 @@ input.invalid {
       flex-wrap: wrap;
 }
 
+.toorder__title {
+  font-size: 40px;
+  text-decoration: underline;
+  font-weight: 700;
+  font-family: 'Futura Demi', cursive;
+}
+
 .toorder__info {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -881,7 +890,7 @@ input.invalid {
           box-shadow: 0 0 20px #ff5a3c;
   right: 0;
   margin-right: 17rem;
-  margin-top: 3.2rem;
+  margin-top: 7.6rem;
   border-radius: 10px;
 }
 
@@ -949,6 +958,8 @@ input[id="toorder-user-message"] {
 .review__title {
   font-size: 40px;
   text-decoration: underline;
+  font-weight: 700;
+  font-family: 'Futura Demi', cursive;
 }
 
 .review-img {
@@ -973,7 +984,6 @@ input[id="toorder-user-message"] {
           box-shadow: 0 0 30px #010101;
   margin: auto;
   margin-top: 2rem;
-  width: 20rem;
   height: 48rem;
 }
 
@@ -1011,6 +1021,8 @@ input[id="toorder-user-message"] {
 .contacts__title {
   font-size: 40px;
   text-decoration: underline;
+  font-weight: 700;
+  font-family: 'Futura Demi', cursive;
   margin: 0;
 }
 
@@ -1059,6 +1071,7 @@ input[id="toorder-user-message"] {
   -webkit-box-shadow: 0 0 50px #010101;
           box-shadow: 0 0 50px #010101;
   z-index: 1;
+  margin: auto;
 }
 
 .first-img:hover {
@@ -1108,6 +1121,25 @@ input[id="toorder-user-message"] {
   font-size: 24px;
   margin: auto;
   max-width: 25rem;
+}
+
+.first__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.first__logo-text {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 2rem;
+  padding-top: 2rem;
+  font-family: 'Futura Demi', cursive;
 }
 
 .modal {
@@ -1248,15 +1280,14 @@ input[id="toorder-user-message"] {
   position: fixed;
   z-index: 199;
   left: 50%;
-  top: 30%;
+  top: 15%;
   background-color: #ffffff;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  padding: 4rem 6rem;
+  padding: 2rem;
   background: #ffffff url(../img/bg-lines.svg) no-repeat center/140%;
   color: #38393b;
-  max-width: 36rem;
-  max-height: 36rem;
+  width: 20rem;
   -webkit-box-shadow: 0 0 7px 6px rgba(34, 34, 34, 0.05);
           box-shadow: 0 0 7px 6px rgba(34, 34, 34, 0.05);
 }
@@ -1286,6 +1317,8 @@ input[id="toorder-user-message"] {
 .work__title {
   font-size: 40px;
   text-decoration: underline;
+  font-weight: 700;
+  font-family: 'Futura Demi', cursive;
 }
 
 .tabs {
@@ -1511,7 +1544,6 @@ input[id="toorder-user-message"] {
           box-shadow: 0 0 20px #010101;
   border-radius: 7px;
   overflow: hidden;
-  margin-bottom: 30px;
   max-width: 19rem;
   text-decoration: none;
   cursor: pointer;
@@ -1575,6 +1607,8 @@ input[id="toorder-user-message"] {
 .about__title {
   font-size: 40px;
   text-decoration: underline;
+  font-weight: 700;
+  font-family: 'Futura Demi', cursive;
 }
 
 .about__text {
@@ -1590,6 +1624,8 @@ input[id="toorder-user-message"] {
 .ordercard__title {
   font-size: 40px;
   text-decoration: underline;
+  font-weight: 700;
+  font-family: 'Futura Demi', cursive;
 }
 
 .ordercard__text {
@@ -1609,7 +1645,38 @@ input[id="toorder-user-message"] {
   width: 400px;
 }
 
-@media screen and (min-width: 1600px) and (max-width: 1750px) {
+#button-up {
+  display: none;
+  opacity: 0.9;
+  filter: alpha(opacity=50);
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  color: #000;
+  -webkit-transition: .5s;
+  transition: .5s;
+  font-size: 10px;
+  z-index: 50;
+}
+
+#button-up:hover {
+  cursor: pointer;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+@media screen and (min-width: 1750px) and (max-width: 11920px) {
+  #button-up {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1749px) {
+  #button-up {
+    display: none;
+  }
   .menu__checkbox {
     display: none;
   }
@@ -1619,7 +1686,7 @@ input[id="toorder-user-message"] {
   }
   .toorder__social {
     margin-right: 8rem;
-    margin-top: 4rem;
+    margin-top: 8.6rem;
   }
   #map {
     width: 1000px;
@@ -1627,6 +1694,9 @@ input[id="toorder-user-message"] {
 }
 
 @media screen and (min-width: 1439px) and (max-width: 1599px) {
+  #button-up {
+    display: none;
+  }
   .menu__checkbox {
     display: none;
   }
@@ -1635,8 +1705,8 @@ input[id="toorder-user-message"] {
         flex-basis: 26%;
   }
   .toorder__social {
-    margin-right: 2rem;
-    margin-top: 3rem;
+    margin-right: 3rem;
+    margin-top: 8rem;
   }
   .toorder__form {
     margin-top: 1rem;
@@ -1650,6 +1720,9 @@ input[id="toorder-user-message"] {
 }
 
 @media screen and (min-width: 1360px) and (max-width: 1438px) {
+  #button-up {
+    display: none;
+  }
   .menu__checkbox {
     display: none;
   }
@@ -1659,7 +1732,7 @@ input[id="toorder-user-message"] {
   }
   .toorder__social {
     margin-right: 2rem;
-    margin-top: 3.2rem;
+    margin-top: 7.8rem;
   }
   .toorder__form {
     margin-top: 1rem;
@@ -1683,6 +1756,9 @@ input[id="toorder-user-message"] {
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1359px) {
+  #button-up {
+    display: none;
+  }
   .menu__checkbox {
     display: none;
   }
@@ -1692,7 +1768,7 @@ input[id="toorder-user-message"] {
   }
   .toorder__social {
     margin-right: 0.5rem;
-    margin-top: 4rem;
+    margin-top: 8rem;
   }
   .toorder__form {
     margin-top: 1rem;
@@ -1735,6 +1811,9 @@ input[id="toorder-user-message"] {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1199px) {
+  #button-up {
+    display: none;
+  }
   .menu__checkbox {
     display: none;
   }
@@ -1748,7 +1827,7 @@ input[id="toorder-user-message"] {
   }
   .toorder__social {
     margin-right: 0.5rem;
-    margin-top: 4rem;
+    margin-top: 7rem;
   }
   .toorder__form {
     margin-top: 1rem;
@@ -1796,6 +1875,9 @@ input[id="toorder-user-message"] {
 }
 
 @media screen and (min-width: 992px) and (max-width: 1023px) {
+  #button-up {
+    display: none;
+  }
   .menu {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
@@ -1806,7 +1888,7 @@ input[id="toorder-user-message"] {
   }
   .toorder__social {
     margin-right: 0.5rem;
-    margin-top: 4rem;
+    margin-top: 7rem;
   }
   .toorder__form {
     margin-top: 1rem;
@@ -1878,7 +1960,8 @@ input[id="toorder-user-message"] {
     position: absolute;
     width: 40px;
     height: 20px;
-    right: 50px;
+    right: 35px;
+    top: 70px;
   }
   .burger:after, .burger:before {
     content: ' ';
@@ -1929,13 +2012,13 @@ input[id="toorder-user-message"] {
   .nav {
     background: url(../img/fone.jpg) no-repeat center/cover;
     position: absolute;
-    -webkit-transition: all 1.3s ease 0s;
-    transition: all 1.3s ease 0s;
+    -webkit-transition: all 2.3s ease 0s;
+    transition: all 2.3s ease 0s;
     width: 100%;
     top: 0;
-    top: -120%;
+    top: -350%;
     left: 0;
-    height: 120%;
+    height: 500px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1999,10 +2082,14 @@ input[id="toorder-user-message"] {
   }
   .toorder__social {
     margin-right: 0.5rem;
-    margin-top: 4rem;
+    margin-top: 7rem;
+    padding: 0;
   }
   .toorder__form {
     margin-top: 1rem;
+  }
+  .toorder__info {
+    font-size: 25px;
   }
   .tabs ul li {
     padding: 10px 25px;
@@ -2010,9 +2097,6 @@ input[id="toorder-user-message"] {
   .contacts__images {
     max-width: 30rem;
     min-height: 20rem;
-  }
-  .toorder__info {
-    font-size: 25px;
   }
   .first {
     -ms-flex-wrap: wrap;
@@ -2024,11 +2108,6 @@ input[id="toorder-user-message"] {
   }
   .first__title {
     margin-top: 1rem;
-  }
-  .toorder__social {
-    margin-right: 5.5rem;
-    margin-top: 2rem;
-    padding: 0;
   }
   .social {
     margin: auto;
@@ -2066,7 +2145,8 @@ input[id="toorder-user-message"] {
     position: absolute;
     width: 40px;
     height: 20px;
-    right: 50px;
+    right: 35px;
+    top: 65px;
   }
   .burger:after, .burger:before {
     content: ' ';
@@ -2117,13 +2197,13 @@ input[id="toorder-user-message"] {
   .nav {
     background: url(../img/fone.jpg) no-repeat center/cover;
     position: absolute;
-    -webkit-transition: all 1.3s ease 0s;
-    transition: all 1.3s ease 0s;
+    -webkit-transition: all 2.3s ease 0s;
+    transition: all 2.3s ease 0s;
     width: 100%;
     top: 0;
-    top: -140%;
+    top: -350%;
     left: 0;
-    height: 500px;
+    height: 600px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2208,8 +2288,8 @@ input[id="toorder-user-message"] {
     font-size: 20px;
   }
   .toorder__social {
-    margin-right: 2.5rem;
-    margin-top: 4rem;
+    margin-right: 6.5rem;
+    margin-top: 5.8rem;
   }
   .toorder__social-title {
     display: none;
@@ -2252,14 +2332,20 @@ input[id="toorder-user-message"] {
   .ordercard__text {
     line-height: 1.5rem;
   }
-  .modalSend {
-    padding: 2rem;
-  }
   #map {
     width: 550px;
   }
   #map img {
     width: 200px;
+  }
+  .card__animal {
+    max-width: 15rem;
+  }
+  .card__animal-btn {
+    padding: 1rem 2rem;
+  }
+  .card__backinfo-images {
+    max-width: 15rem;
   }
 }
 
@@ -2269,7 +2355,9 @@ input[id="toorder-user-message"] {
     position: absolute;
     width: 40px;
     height: 20px;
-    right: 50px;
+    right: 35px;
+    top: 60px;
+    margin: 0;
   }
   .burger:after, .burger:before {
     content: ' ';
@@ -2320,13 +2408,13 @@ input[id="toorder-user-message"] {
   .nav {
     background: url(../img/fone.jpg) no-repeat center/cover;
     position: absolute;
-    -webkit-transition: all 1.3s ease 0s;
-    transition: all 1.3s ease 0s;
+    -webkit-transition: all 2.3s ease 0s;
+    transition: all 2.3s ease 0s;
     width: 100%;
     top: 0;
-    top: -120%;
+    top: -350%;
     left: 0;
-    height: 120%;
+    height: 700px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2453,14 +2541,20 @@ input[id="toorder-user-message"] {
   .ordercard__text {
     line-height: 1.5rem;
   }
-  .modalSend {
-    padding: 2rem 2rem;
-  }
   #map {
     width: 420px;
   }
   #map img {
     width: 200px;
+  }
+  .card__animal {
+    max-width: 12rem;
+  }
+  .card__animal-btn {
+    padding: 0.35rem 0.5rem;
+  }
+  .card__backinfo-images {
+    max-width: 12rem;
   }
 }
 
@@ -2470,7 +2564,8 @@ input[id="toorder-user-message"] {
     position: absolute;
     width: 40px;
     height: 20px;
-    right: 50px;
+    right: 35px;
+    top: 60px;
   }
   .burger:after, .burger:before {
     content: ' ';
@@ -2521,13 +2616,13 @@ input[id="toorder-user-message"] {
   .nav {
     background: url(../img/fone.jpg) no-repeat center/cover;
     position: absolute;
-    -webkit-transition: all 1.3s ease 0s;
-    transition: all 1.3s ease 0s;
+    -webkit-transition: all 2.3s ease 0s;
+    transition: all 2.3s ease 0s;
     width: 100%;
     top: 0;
-    top: -120%;
+    top: -350%;
     left: 0;
-    height: 500px;
+    height: 700px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2666,9 +2761,6 @@ input[id="toorder-user-message"] {
     max-width: 16rem;
     max-height: 14rem;
   }
-  .modalSend {
-    padding: 2rem 2rem;
-  }
   #map {
     width: 350px;
   }
@@ -2683,7 +2775,8 @@ input[id="toorder-user-message"] {
     position: absolute;
     width: 40px;
     height: 20px;
-    right: 50px;
+    right: 35px;
+    top: 60px;
   }
   .burger:after, .burger:before {
     content: ' ';
@@ -2734,13 +2827,13 @@ input[id="toorder-user-message"] {
   .nav {
     background: url(../img/fone.jpg) no-repeat center/cover;
     position: absolute;
-    -webkit-transition: all 1.3s ease 0s;
-    transition: all 1.3s ease 0s;
+    -webkit-transition: all 2.3s ease 0s;
+    transition: all 2.3s ease 0s;
     width: 100%;
     top: 0;
-    top: -120%;
+    top: -350%;
     left: 0;
-    height: 600px;
+    height: 500px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2751,7 +2844,7 @@ input[id="toorder-user-message"] {
   .nav ul {
     background: rgba(192, 192, 192, 0.4);
     width: 18rem;
-    height: 25rem;
+    height: 27rem;
     border-radius: 5px;
   }
   .nav a {
@@ -2916,13 +3009,24 @@ input[id="toorder-user-message"] {
     height: 550px;
   }
   .modalSend {
-    padding: 2rem 2rem;
+    width: 18rem;
   }
   #map {
     width: 280px;
   }
   #map img {
     width: 150px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .animated {
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    -webkit-animation: none !important;
+    animation: none !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

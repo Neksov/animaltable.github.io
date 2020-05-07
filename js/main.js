@@ -150,6 +150,8 @@ $(document).ready(function () {
         data: $(".modal__form").serialize(), //Преобразует данные формы в строку, пригодную для использования в URL
         success: function (response) {
           $(form)[0].reset(); // чистит поля после отправки формы
+          modal.removeClass("modal--visible");
+          $(".modal").fadeOut();
           $(".modalSend").fadeIn();
         },
       });
@@ -166,13 +168,7 @@ $(document).ready(function () {
 //анимация 
 new WOW().init();
 
-//data-src
-[].forEach.call(document.querySelectorAll("img[data-src]"), function (img) {
-  img.setAttribute("src", img.getAttribute("data-src"));
-  img.onload = function () {
-    img.removeAttribute("data-src");
-  };
-});
+
 
 //увеличение фото
 lightbox.option({
@@ -206,3 +202,16 @@ $(document).ready(function () {
 function toorder() {
   location.href = '#7';
 }
+
+var wow = new WOW({
+  mobile: false
+});
+new wow.init();
+
+//data-src
+[].forEach.call(document.querySelectorAll("img[data-src]"), function (img) {
+  img.setAttribute("src", img.getAttribute("data-src"));
+  img.onload = function () {
+    img.removeAttribute("data-src");
+  };
+});
