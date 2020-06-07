@@ -163,12 +163,18 @@ $(document).ready(function () {
     placeholder: "Ваш номер телефона:",
   });
 
+
+  //закрытие аккардиона
+  $(".accordion-label").on("click", function (event) {
+    $this = $(event.target);
+    $('.active2').removeClass("active2");
+    $this.next('.accordion-child').addClass("active2");
+  });
+
 });
 
 //анимация 
 new WOW().init();
-
-
 
 //увеличение фото
 lightbox.option({
@@ -201,7 +207,7 @@ $(document).ready(function () {
 //переход по ссылке
 function toorder() {
   location.href = '#7';
-}
+};
 
 var wow = new WOW({
   mobile: false

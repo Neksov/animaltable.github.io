@@ -1,12 +1,12 @@
 .contacts
   display: block
   padding: 2rem
+  overflow: auto
   &__main
     display: flex
     align-items: center
     justify-content: center
     flex-wrap: wrap
-
   &__title
     font-size: 40px
     text-decoration: underline
@@ -21,9 +21,68 @@
     &-title
       font-size: 30px
     &-main
-      font-size: 30px
-
+      font-size: 25px
   &__images
     margin-top: 1rem
     max-width: 33rem
     min-height: 23rem
+.hide
+  clip: rect(0 0 0 0)
+  height: 1px
+  margin: -1px
+  padding: 0
+  position: absolute
+  width: 1px
+.accordion
+  background: #ff5a3c
+  border: 1px solid #ff5a3c
+  list-style: none
+  padding: 0.5rem
+  opacity: 0.9
+  width: 100%
+.accordion-item
+  position: relative
+  width: 100%
+  border-bottom: 2px solid #171718
+  padding: 0.5rem
+  &:last-child
+    border-bottom: none
+.accordion-label
+  padding: 20px 20px 20px 30px
+  width: 100%
+  display: block
+  font-size: 25px
+  color: #fff
+  &:hover
+    cursor: pointer
+    &:before
+      content: ''
+      position: absolute
+      height: 10px
+      width: 10px
+      top: 22px
+      left: 12px
+      display: inline-block
+      border-left: 5px solid #171718
+      border-top: 5px solid transparent
+      border-bottom: 5px solid transparent
+    input[type=checkbox]:checked ~ &:before
+      transform: rotate(90deg)
+.accordion-child
+  margin: 0
+  overflow: hidden
+  transition: all 0.3s ease
+  opacity: 0
+  height: 0
+  transform: scale(1,0)
+  transform-origin: center top
+  color: #fff
+  input[type=checkbox]:checked ~ &
+    border: 1px solid #171718
+    margin: 0 -20px 15px -20px
+    background: #171718
+    box-shadow: 0 3px 6px 1px rgba(0,0,0,0.16)
+    padding: 30px
+    height: auto
+    opacity: 1
+    transform: scale(1,1)

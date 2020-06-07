@@ -115,7 +115,7 @@
         <!-- Swiper -->
         <div class="swiper-container swiper-container-initialized swiper-container-horizontal">
           <div class="swiper-wrapper">
-            <div class="swiper-slide swiper-slide-active first">
+            <div class="swiper-slide swiper-slide-active first" id="1">
               <div class="first__logo">
                 <img data-src="img/thepetsour.png" src="a" alt="thepetsour" class="first-img" />
                 <p class="first__logo-text">Подставки под миски</p>
@@ -1447,34 +1447,36 @@
 
             <div class="swiper-slide contacts" id="6">
               <h3 class="contacts__title">Контакты</h3>
-              <div class="contacts__main">
-                <img data-src="img/contact.png" src="a" alt="" class="contacts__images" />
+              <img data-src="img/contact.png" src="a" alt="" class="contacts__images" />
 
-                <div class="contacts__text">
-                  <div class="contacts__text-group">
-                    <strong class="contacts__text-title">Наш адрес:</strong>
+              <ul class="accordion">
+                <li class="accordion-item">
+                  <input id="s1" class="hide" type="checkbox">
+                  <label for="s1" class="accordion-label ">Адрес</label>
+                  <div class="contacts__text-group accordion-child">
                     <span class="contacts__text-main">Россия,</span>
-                    <span class="contacts__text-main">Город Санкт-Петербург,</span>
-                    <span class="contacts__text-main">Улица Белышева,</span>
+                    <span class="contacts__text-main">город Санкт-Петербург,</span>
+                    <span class="contacts__text-main">улица Белышева,</span>
                     <span class="contacts__text-main">+7(911)-983-31-12</span>
                   </div>
-                  <div class="contacts__text-group">
-                    <div class="work__day">
-                      <strong class="contacts__text-title">Рабочие дни:</strong>
-                      <span class="contacts__text-main">Понедельник-Пятница (09:00-18:00)</span>
-                    </div>
-                    <div class="wekeend">
-                      <strong class="contacts__text-title">Выходные:</strong>
-                      <span class="contacts__text-main">Суббота-Воскресенье
-                      </span>
-                    </div>
+                </li>
+                <li class="accordion-item">
+                  <input id="s2" class="hide" type="checkbox">
+                  <label for="s2" class="accordion-label">Доставка</label>
+                  <div class="contacts__text-group accordion-child active2">
+                    <span class="contacts__text-main">Любой транспортной компанией на Ваш выбор. Доставка по
+                      Санкт-Петербургу 300р либо самовывоз</span>
                   </div>
-                  <div class="contacts__text-group">
-                    <strong class="contacts__text-title">Доставка:</strong>
-                    <span class="contacts__text-main">Любой транспортной компанией на Ваш выбор</span>
+                </li>
+                <li class="accordion-item">
+                  <input id="s3" class="hide" type="checkbox">
+                  <label for="s3" class="accordion-label">Материал</label>
+                  <div class="contacts__text-group accordion-child">
+                    <span class="contacts__text-main">Мебельный щит сосна. Акриловая краска. Водостойкий акриловый лак.
+                      После высыхания изделие является полностью безопасным для Вас и Вашего питомца.</span>
                   </div>
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
 
             <div class="swiper-slide toorder" style="padding: 2rem;" id="7">

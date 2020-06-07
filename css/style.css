@@ -838,7 +838,8 @@ input[id="toorder-user-message"] {
 
 .contacts {
   display: block;
-  padding: 2rem; }
+  padding: 2rem;
+  overflow: auto; }
   .contacts__main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -865,11 +866,82 @@ input[id="toorder-user-message"] {
     .contacts__text-title {
       font-size: 30px; }
     .contacts__text-main {
-      font-size: 30px; }
+      font-size: 25px; }
   .contacts__images {
     margin-top: 1rem;
     max-width: 33rem;
     min-height: 23rem; }
+
+.hide {
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.accordion {
+  background: #ff5a3c;
+  border: 1px solid #ff5a3c;
+  list-style: none;
+  padding: 0.5rem;
+  opacity: 0.9;
+  width: 100%; }
+
+.accordion-item {
+  position: relative;
+  width: 100%;
+  border-bottom: 2px solid #171718;
+  padding: 0.5rem; }
+  .accordion-item:last-child {
+    border-bottom: none; }
+
+.accordion-label {
+  padding: 20px 20px 20px 30px;
+  width: 100%;
+  display: block;
+  font-size: 25px;
+  color: #fff; }
+  .accordion-label:hover {
+    cursor: pointer; }
+    .accordion-label:hover:before {
+      content: '';
+      position: absolute;
+      height: 10px;
+      width: 10px;
+      top: 22px;
+      left: 12px;
+      display: inline-block;
+      border-left: 5px solid #171718;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent; }
+    input[type=checkbox]:checked ~ .accordion-label:hover:before {
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg); }
+
+.accordion-child {
+  margin: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0;
+  height: 0;
+  -webkit-transform: scale(1, 0);
+  transform: scale(1, 0);
+  -webkit-transform-origin: center top;
+  transform-origin: center top;
+  color: #fff; }
+  input[type=checkbox]:checked ~ .accordion-child {
+    border: 1px solid #171718;
+    margin: 0 -20px 15px -20px;
+    background: #171718;
+    -webkit-box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.16);
+    box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.16);
+    padding: 30px;
+    height: auto;
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1); }
 
 .first {
   display: -webkit-box;
@@ -1992,6 +2064,7 @@ input[id="toorder-user-message"] {
   .tabs ul li {
     padding: 10px 1px; }
   .contacts__images {
+    margin: -1rem;
     max-width: 30rem;
     min-height: 20rem; }
   .toorder__info {
@@ -2157,6 +2230,7 @@ input[id="toorder-user-message"] {
   .tabs ul li {
     padding: 10px 10px; }
   .contacts__images {
+    margin: -1rem;
     max-width: 25rem;
     min-height: 17rem; }
   .first {
@@ -2327,7 +2401,8 @@ input[id="toorder-user-message"] {
     padding: 10px 10px; }
   .contacts__images {
     max-width: 20rem;
-    min-height: 14rem; }
+    min-height: 14rem;
+    margin: -1rem; }
   .first {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
