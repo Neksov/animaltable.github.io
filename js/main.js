@@ -163,11 +163,10 @@ $(document).ready(function () {
     placeholder: "Ваш номер телефона:",
   });
 
-
   //закрытие аккардиона
   $(".accordion-label").on("click", function (event) {
     $this = $(event.target);
-    $('.active2').removeClass("active2");
+    $('.active2').removeClass("hide");
     $this.next('.accordion-child').addClass("active2");
   });
 

@@ -873,10 +873,6 @@ input[id="toorder-user-message"] {
     min-height: 23rem; }
 
 .hide {
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  padding: 0;
   position: absolute;
   width: 1px; }
 
@@ -933,15 +929,15 @@ input[id="toorder-user-message"] {
   color: #fff; }
   input[type=checkbox]:checked ~ .accordion-child {
     border: 1px solid #171718;
-    margin: 0 -20px 15px -20px;
+    margin: auto;
     background: #171718;
     -webkit-box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.16);
     box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.16);
     padding: 30px;
     height: auto;
     opacity: 1;
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1); }
+    -webkit-transform: scale(1);
+    transform: scale(1); }
 
 .first {
   display: -webkit-box;
@@ -1688,8 +1684,8 @@ input[id="toorder-user-message"] {
   .nav {
     background: url(../img/fone.jpg) no-repeat center/cover;
     position: fixed;
-    -webkit-transition: all 2.3s ease 0s;
-    transition: all 2.3s ease 0s;
+    -webkit-transition: all 1s ease 0s;
+    transition: all 1s ease 0s;
     width: 100%;
     top: -350%;
     left: 0;
@@ -1713,9 +1709,7 @@ input[id="toorder-user-message"] {
       .nav a:hover::before {
         background: none; }
   .nav.active {
-    top: 0;
-    -webkit-transition: all 1.3s ease 0s;
-    transition: all 1.3s ease 0s; }
+    top: 0; }
   .main__first {
     display: block;
     margin: 0;
