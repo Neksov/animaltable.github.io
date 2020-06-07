@@ -1326,7 +1326,7 @@ input[id="toorder-user-message"] {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: -6rem; }
+  margin-top: -3rem; }
   .ordercard__title {
     font-size: 40px;
     text-decoration: underline;
@@ -1334,7 +1334,7 @@ input[id="toorder-user-message"] {
     font-family: 'Futura Demi', cursive; }
   .ordercard__text {
     font-size: 30px;
-    line-height: 2.5rem;
+    line-height: 3.5rem;
     padding-bottom: 1rem;
     padding-top: 1rem; }
 
@@ -1615,11 +1615,10 @@ input[id="toorder-user-message"] {
     transform: scale(0); }
   .nav {
     background: url(../img/fone.jpg) no-repeat center/cover;
-    position: absolute;
+    position: fixed;
     -webkit-transition: all 2.3s ease 0s;
     transition: all 2.3s ease 0s;
     width: 100%;
-    top: 0;
     top: -350%;
     left: 0;
     height: 500px;
@@ -1870,7 +1869,7 @@ input[id="toorder-user-message"] {
       width: 25px;
       height: 25px; }
   .ordercard__text {
-    line-height: 1.5rem; }
+    line-height: 2.5rem; }
   #map {
     width: 550px; }
     #map img {
@@ -2035,7 +2034,7 @@ input[id="toorder-user-message"] {
       width: 25px;
       height: 25px; }
   .ordercard__text {
-    line-height: 1.5rem; }
+    line-height: 2.5rem; }
   #map {
     width: 420px; }
     #map img {
@@ -2205,7 +2204,7 @@ input[id="toorder-user-message"] {
       width: 20px;
       height: 20px; }
   .ordercard__text {
-    line-height: 1.5rem; }
+    line-height: 2.5rem; }
   .card__animal-btn {
     padding: 1rem 2rem; }
   .card__backinfo-images {
@@ -2381,7 +2380,7 @@ input[id="toorder-user-message"] {
   .ordercard {
     padding: 0; }
     .ordercard__text {
-      line-height: 1.5rem;
+      line-height: 2.5rem;
       font-size: 20px;
       padding: 1rem; }
     .ordercard__title {
@@ -2414,7 +2413,7 @@ input[id="toorder-user-message"] {
     #map img {
       width: 150px; } }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 991px) {
   .animated {
     -webkit-transition-property: none !important;
     transition-property: none !important;
