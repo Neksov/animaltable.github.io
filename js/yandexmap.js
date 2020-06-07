@@ -40,7 +40,11 @@ var myMap,
   myPlacemark36,
   myPlacemark37,
   myPlacemark38,
-  myPlacemark39;
+  myPlacemark39,
+  myPlacemark40,
+  myPlacemark41,
+  myPlacemark42,
+  myPlacemark43;
 
 function init() {
   // Создание карты.
@@ -218,6 +222,22 @@ function init() {
     balloonContentHeader: "Стоимость доставки-676р",
     balloonContentBody: '<img src="img/dog19.jpg" >',
   });
+  myPlacemark40 = new ymaps.Placemark([53.024259, 158.643503], {
+    balloonContentHeader: "Стоимость доставки-650р",
+    balloonContentBody: '<img src="img/cat17.jpg" >',
+  });
+  myPlacemark41 = new ymaps.Placemark([53.024259, 158.643503], {
+    balloonContentHeader: "Стоимость доставки-бесплатно",
+    balloonContentBody: '<img src="img/dog20.jpg" >',
+  });
+  myPlacemark42 = new ymaps.Placemark([55.845370, 37.363870], {
+    balloonContentHeader: "Стоимость доставки-469р",
+    balloonContentBody: '<img src="img/dog21.jpg" >',
+  });
+  myPlacemark43 = new ymaps.Placemark([59.927423, 30.348297], {
+    balloonContentHeader: "Стоимость доставки-бесплатная",
+    balloonContentBody: '<img src="img/dog21.jpg" >',
+  });
   myPin
     .add(myPlacemark1)
     .add(myPlacemark2)
@@ -257,6 +277,10 @@ function init() {
     .add(myPlacemark36)
     .add(myPlacemark37)
     .add(myPlacemark38)
-    .add(myPlacemark39);
+    .add(myPlacemark39)
+    .add(myPlacemark40)
+    .add(myPlacemark41)
+    .add(myPlacemark42)
+    .add(myPlacemark43);
   myMap.geoObjects.add(myPin);
 }
