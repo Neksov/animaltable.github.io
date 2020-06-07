@@ -867,6 +867,9 @@ input[id="toorder-user-message"] {
       font-size: 30px; }
     .contacts__text-main {
       font-size: 25px; }
+    .contacts__text-group a {
+      text-decoration: none;
+      color: #fff; }
   .contacts__images {
     margin-top: 1rem;
     max-width: 33rem;

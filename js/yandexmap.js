@@ -59,10 +59,13 @@ function init() {
     zoom: 6,
     controls: ["smallMapDefaultSet"],
   });
-  myPin = new ymaps.GeoObjectCollection({}, {
-    preset: "islands#redIcon", //все метки красные
-    draggable: false, // и их можно перемещать
-  });
+  myPin = new ymaps.GeoObjectCollection(
+    {},
+    {
+      preset: "islands#redIcon", //все метки красные
+      draggable: false, // и их можно перемещать
+    }
+  );
 
   myMap.behaviors.disable(["scrollZoom"]);
 
@@ -226,17 +229,17 @@ function init() {
     balloonContentHeader: "Стоимость доставки-650р",
     balloonContentBody: '<img src="img/cat17.jpg" >',
   });
-  myPlacemark41 = new ymaps.Placemark([53.024259, 158.643503], {
+  myPlacemark41 = new ymaps.Placemark([59.94267, 30.27843], {
     balloonContentHeader: "Стоимость доставки-бесплатно",
     balloonContentBody: '<img src="img/dog20.jpg" >',
   });
-  myPlacemark42 = new ymaps.Placemark([55.845370, 37.363870], {
+  myPlacemark42 = new ymaps.Placemark([55.84537, 37.36387], {
     balloonContentHeader: "Стоимость доставки-469р",
     balloonContentBody: '<img src="img/dog21.jpg" >',
   });
   myPlacemark43 = new ymaps.Placemark([59.927423, 30.348297], {
     balloonContentHeader: "Стоимость доставки-бесплатная",
-    balloonContentBody: '<img src="img/dog21.jpg" >',
+    balloonContentBody: '<img src="img/other7.jpg" >',
   });
   myPin
     .add(myPlacemark1)
